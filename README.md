@@ -1,6 +1,15 @@
-# vue-test
+# isui-vue
 
-> A Vue.js project
+### 构思
+
+完成一套isui(react的组件库)，学习vue和组件的写法。
+
+### 问题
+
+- [ ] 维护md文档，用一套代码实现代码复制和实例
+- [ ] 选择代码高亮
+- [ ] 按组件打包出来
+- [ ] 又想结合iview写法
 
 ## Build Setup
 

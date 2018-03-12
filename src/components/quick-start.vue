@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    hello
+    00000000
     <i-code lang="html" slot="code">{{ code }}</i-code>
     <!-- <vue-markdown>{{code}}</vue-markdown> -->
     <div v-html="code"></div>
