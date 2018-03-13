@@ -41,8 +41,8 @@
 
 <script>
 import BackToTop from "vue-backtotop";
-import routes from "./router/routers";
-import  {getLang } from './utils/getLang'
+import routes from "./router/routerList";
+import { getLang } from "./utils/getLang";
 export default {
   name: "Layout",
   components: {
@@ -60,8 +60,6 @@ export default {
     renderMenu(obj) {
       let _obj = obj || routes;
       let html = [];
-        console.log(_obj)
-      
       for (let a in _obj) {
         if (_obj[a] instanceof Array) {
           html = html.concat(
@@ -70,40 +68,35 @@ export default {
         } else if (_obj[a] instanceof Object) {
           for (let e in _obj[a]) {
             if (_obj[a][e] instanceof Array) {
-            console.log(_obj[a][e])              
-                
-              html = html.concat(
-                <ul key={`${e}`}>
-                  <li class="title">{getLang(`category.${e}`)}</li>
-                  {_obj[a][e].map((item, item_idx) =>
+              html = html+
+                `<ul key=${e}>
+                  <li class="title">${getLang(`category.${e}`)}</li>
+                  ${_obj[a][e].map((item, item_idx) =>
                     this.renderMenuLi(item, item_idx)
                   )}
-                </ul>
-              );
+                </ul>`
             }
           }
         }
       }
-      return html;
+        this.menuList=html.replace(/,/g, '')
     },
     renderMenuLi(item, idx) {
-        console.log('renderMenuLi')
-        
-      if (!item.path) return null;
-      if (getPageName(window.location.href) === getPageName(item.path)) {
-        return (
-          <li key={`${idx}`} class="active" key={idx}>
-            {getLang(`page.${getPageName(item.path)}`)}
-          </li>
-        );
+      if (!item.path) return "";
+      if (
+        this.getPageName(window.location.href) === this.getPageName(item.path)
+      ) {
+        return `<li key=${idx} class="active" key={idx}>
+            ${getLang(`page.${this.getPageName(item.path)}`)}
+          </li>`;
       }
-      return (
-        <li key={`${idx}`}>
-          <Link to={`/${this.getLangName()}/${this.getPageName(item.path)}`}>
-            {getLang(`page.${this.getPageName(item.path)}`)}
-          </Link>
-        </li>
-      );
+      return `<li key=${idx}>
+          <a
+            href=/${this.getLangName()}/${this.getPageName(item.path)}
+          >
+           ${getLang(`page.${this.getPageName(item.path)}`)}
+          </a>
+        </li>`;
     },
     getPageName(location) {
       const routes = location.match(/(?:\/(.+))?(\/(.+)\?|\/(.+))/);
@@ -111,6 +104,9 @@ export default {
         return routes[3] || routes[4];
       }
       return "quick-start";
+    },
+    getLangName() {
+      return localStorage.getItem("WUI_LANG") || "cn";
     }
   }
 };

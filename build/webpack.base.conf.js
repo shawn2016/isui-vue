@@ -27,7 +27,7 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    app: './src/main.js',
+    app: './examples/main.js',
     vendors: ['vue', 'vue-router', 'highlightjs/highlight.pack.js', 'clipboard']
   },
   output: {
@@ -42,6 +42,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'examples':resolve('examples'),
       'hljs': 'highlightjs/highlight.pack.js'
     }
   },

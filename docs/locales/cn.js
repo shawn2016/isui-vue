@@ -1,6 +1,11 @@
 module.exports = {
     page: {
       'quick-start': '快速上手',
+      'quick-start1': 'quick-start1',
+      'quick-start2': 'quick-start2',
+      'quick-start3': 'quick-start3',
+      'quick-start4': 'quick-start4',
+      
       'theme': '主题定制',
       'changelog': '更新日志',
       'color': 'Color 颜色',

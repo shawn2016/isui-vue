@@ -1,3 +1,4 @@
+import locales from '../../docs/locales';
 const getLang = (key) => {
     let locale = localStorage.getItem('WUI_LANG') || 'cn';
     const map = locales[locale] || {};

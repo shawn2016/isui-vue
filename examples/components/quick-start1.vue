@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    111111111111
     <i-code lang="html" slot="code">{{ code }}</i-code>
     <!-- <vue-markdown>{{code}}</vue-markdown> -->
     <div v-html="code"></div>
@@ -9,7 +8,7 @@
 
 <script>
 import iCode from './code'
-import markdown from '../../docs/md/cn/loading-bar.md'
+import markdown from '../../docs/md/cn/quick-start1.md'
 import VueMarkdown from 'vue-markdown'
 export default {
   // name: 'HelloWorld',
