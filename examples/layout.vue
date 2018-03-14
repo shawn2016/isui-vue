@@ -15,10 +15,6 @@
     </div>
    </div>
   </div> 
-
-
-
-
   <div class="w-docs-content">
    <div>
     <div class="w-docs-content-warpper">
@@ -68,18 +64,19 @@ export default {
         } else if (_obj[a] instanceof Object) {
           for (let e in _obj[a]) {
             if (_obj[a][e] instanceof Array) {
-              html = html+
+              html =
+                html +
                 `<ul key=${e}>
                   <li class="title">${getLang(`category.${e}`)}</li>
                   ${_obj[a][e].map((item, item_idx) =>
                     this.renderMenuLi(item, item_idx)
                   )}
-                </ul>`
+                </ul>`;
             }
           }
         }
       }
-        this.menuList=html.replace(/,/g, '')
+      this.menuList = html.replace(/,/g, "");
     },
     renderMenuLi(item, idx) {
       if (!item.path) return "";
@@ -91,9 +88,7 @@ export default {
           </li>`;
       }
       return `<li key=${idx}>
-          <a
-            href=/${this.getLangName()}/${this.getPageName(item.path)}
-          >
+          <a href=/${this.getLangName()}/${this.getPageName(item.path)} >
            ${getLang(`page.${this.getPageName(item.path)}`)}
           </a>
         </li>`;

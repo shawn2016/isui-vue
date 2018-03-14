@@ -5,16 +5,19 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import BackToTop from 'vue-backtotop'
+import util from './utils/util'
 import App from './App'
 import Routers from './router'
 import Env from './config/env'
 import './styles/hljs.css'
-import  '../docs/style/base.less'
-import  './index.less'
+import '../docs/style/base.less'
+import './index.less'
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)
 Vue.use(BackToTop)
+Vue.use(util)
+
 // 路由配置
 const RouterConfig = {
   routes: Routers

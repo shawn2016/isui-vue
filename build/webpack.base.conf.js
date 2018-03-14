@@ -43,6 +43,7 @@ module.exports = {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
       'examples':resolve('examples'),
+      'docs':resolve('docs'),
       'hljs': 'highlightjs/highlight.pack.js'
     }
   },
