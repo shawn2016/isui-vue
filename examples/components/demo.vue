@@ -14,8 +14,6 @@
 
 <script>
 import iCode from "./code";
-import Button from "../../src/components/button";
-import Icon from "../../src/components/icon";
 import VueMarkdown from "vue-markdown";
 import marked from "marked";
 import Vue from "vue";
@@ -50,12 +48,7 @@ export default {
       }
       let obj = Object.assign(
         {
-          template: `<div>${this.htmlCode}</div>`,
-          components: {
-            Button,
-            ButtonGroup: Button.Group,
-            Icon
-          }
+          template: `<div>${this.htmlCode}</div>`
         },
         jsCode
       );

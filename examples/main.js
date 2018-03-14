@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import BackToTop from 'vue-backtotop'
 import util from './utils/util'
 import App from './App'
+import isui from '../src'
 import Routers from './router'
 import Env from './config/env'
 import './styles/hljs.css'
@@ -17,7 +18,7 @@ Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(BackToTop)
 Vue.use(util)
-
+Vue.use(isui)
 // 路由配置
 const RouterConfig = {
   routes: Routers
