@@ -102,7 +102,6 @@
             }
         },
         mounted () {
-          console.log(this.$refs.code)
            this.$refs.code.innerHTML=this.$refs.code.innerHTML.replace(/```/g, '');          
             this.code = this.$refs.code.innerHTML.replace(/\n/, '');
             this.$refs.code.innerHTML = this.code;

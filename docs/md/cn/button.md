@@ -7,7 +7,6 @@ Button 按钮
 按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。
 
 通过设置`type`为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`创建不同样式的按钮，不设置为默认样式。
-<!--DemoStart-->
 ```js
 <template>
     <Button>Default</Button>
@@ -27,7 +26,6 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 图标按钮及按钮形状
@@ -37,7 +35,6 @@ Button 按钮
 使用`Button`的`icon`属性，图标位置将在最左边，如果需要自定义位置，需使用`Icon`组件。
 
 通过设置`shape`属性为`circle`，可将按钮置为圆的形状。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -57,7 +54,6 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 按钮尺寸
@@ -65,7 +61,6 @@ Button 按钮
 按钮有三种尺寸：大、默认（中）、小
 
 通过设置`size`为`large`和`small`将按钮设置为大和小尺寸，不设置为默认（中）尺寸。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -83,7 +78,6 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 长按钮
@@ -91,7 +85,6 @@ Button 按钮
 通过设置属性 `long` 可将按钮宽度设置为 100%，常用于弹窗内操作按钮。
 
 使用者也可以直接通过给组件添加 `style` 来设置更细节的样式，比如定宽。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -105,13 +98,11 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 不可用状态 
 
 通过添加`disabled`属性可将按钮设置为不可用状态。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -136,13 +127,11 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 加载中状态
 
 通过添加`loading`属性可以让按钮处于加载中状态，后两个按钮在点击时进入加载状态。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -175,7 +164,6 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 按钮组合
@@ -185,7 +173,6 @@ Button 按钮
 通过设置`ButtonGroup`的属性`size`为`large`和`small`，可将按钮组尺寸设置为大和小，不设置`size`，则为默认（中）尺寸。
 
 通过设置`ButtonGroup`的属性`shape`为`circle`，可将按钮组形状设置为圆角。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -287,13 +274,11 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
 ### 按钮组纵向排列
 
 通过设置`ButtonGroup`的属性`vertical`，可以使按钮组纵向排列。
-<!--DemoStart-->
 
 ```js
 <template>
@@ -310,6 +295,47 @@ Button 按钮
     }
 </script>
 ```
-<!--End-->
 <!--divider-->
 
+### 安装和使用
+
+
+```js
+npm install uiw --save
+```
+
+<!--divider-->
+
+
+```js
+import { Button } from 'uiw';
+// or
+import Button from 'uiw/lib/button';
+const ButtonGroup = Button.Group;
+```
+
+<!--divider-->
+
+### Button
+<!--table-->
+| 参数        | 说明                                       | 类型      | 默认值    |
+| --------- | ---------------------------------------- | ------- | ------ |
+| type      | 按钮类型，可选值为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`或者不设置 | String  | -      |
+| size      | 按钮大小，可选值为`large`、`small`、`default`或者不设置  | String  | -      |
+| shape     | 按钮形状，可选值为`circle`或者不设置                   | String  | -      |
+| long      | 开启后，按钮的长度为 100%                          | Boolean | false  |
+| html-type | 设置`button`原生的`type`，可选值为`button`、`submit`、`reset` | String  | button |
+| disabled  | 设置按钮为禁用状态                                | Boolean | false  |
+| loading   | 设置按钮为加载中状态                               | Boolean | false  |
+| icon      | 设置按钮的图标类型                                | String  | -      |
+<!--table-->
+<!--divider-->
+### ButtonGroup
+<!--table-->
+| 参数       | 说明                                       | 类型      | 默认值   |
+| -------- | ---------------------------------------- | ------- | ----- |
+| size     | 按钮组合大小，可选值为`large`、`small`、`default`或者不设置 | String  | -     |
+| shape    | 按钮组合形状，可选值为`circle`或者不设置                 | String  | -     |
+| vertical | 是否纵向排列按钮组                                | Boolean | false |
+<!--table-->
+<!--divider-->

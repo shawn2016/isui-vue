@@ -1,35 +1,35 @@
 <template>
-  <div class="w-docs">
-      <div class="w-docs-menu-warpper">
-   <div class="w-docs-menu-content">
-    <div class="w-docs-logo">
-     <a href="https://uiw-react.github.io"><img src="https://uiw-react.github.io/static/media/logo.3d8ef350.svg" alt="logo" /><span>uiw <i class="version">1.7.1 </i> <sup>beta</sup></span></a>
+  <div class="is-docs">
+      <div class="is-docs-menu-warpper">
+   <div class="is-docs-menu-content">
+    <div class="is-docs-logo">
+     <a href="https://github.com/shawn2016/isui-vue"><img src="http://nodedai.com/isui/static/media/logo.fef9640b.png" alt="logo" /><span>{{packageValue.name}} <i class="version">{{packageValue.version}} </i> <sup>beta</sup></span></a>
     </div>
-    <ul class="w-docs-menu-list">
+    <ul class="is-docs-menu-list">
      <li v-html="menuList"></li>
     </ul>
-    <div class="w-docs-info">
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw/issues"><i class="w-icon-message"></i> 反馈建议</a>
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw/issues/new"><i class="w-icon-question-circle"></i> 提交bug</a>
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw"><i class="w-icon-github"></i> Github</a>
+    <div class="is-docs-info">
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue/issues"><i class="is-icon-message"></i> 反馈建议</a>
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue/issues/new"><i class="is-icon-question-circle"></i> 提交bug</a>
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue"><i class="is-icon-github"></i> Github</a>
     </div>
    </div>
   </div> 
-  <div class="w-docs-content">
+  <div class="is-docs-content">
    <div>
-    <div class="w-docs-content-warpper">
+    <div class="is-docs-content-warpper">
      <router-view/>
     </div>
-    <div class="w-docs-docinfo">
+    <div class="is-docs-docinfo">
      犯了错误还是想对文件做出贡献？ 
-     <a href="https://github.com/uiw-react/uiw/blob/master/docs/md/cn/color.md" target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a> 
+     <a :href="mdUrl" target="_blank" rel="noopener noreferrer">在Github上编辑本页！</a> 
      <br />
-     <a href="https://github.com/uiw-react/uiw/issues" target="_blank" rel="noopener noreferrer">反馈建议</a> | 
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw/issues/new">提交bug</a> | 
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/uiw-react/uiw">Github</a>
+     <a href="https://github.com/shawn2016/isui-vue/issues" target="_blank" rel="noopener noreferrer">反馈建议</a> | 
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue/issues/new">提交bug</a> | 
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue">Github</a>
     </div>
    </div>
-  <back-to-top text="Back to top"></back-to-top>
+  <back-to-top class="is-docs-totop" text=""></back-to-top>
   </div>
    
   </div>
@@ -39,6 +39,7 @@
 import BackToTop from "vue-backtotop";
 import routes from "./router/routerList";
 import { getLang } from "./utils/getLang";
+const packageValue = require("../package.json");
 export default {
   name: "Layout",
   components: {
@@ -46,10 +47,12 @@ export default {
   },
   data() {
     return {
-      menuList: ""
+      menuList: "",
+      mdUrl: "",
+      packageValue
     };
   },
-  created() {
+  mounted() {
     this.renderMenu();
   },
   methods: {
@@ -77,6 +80,7 @@ export default {
         }
       }
       this.menuList = html.replace(/,/g, "");
+      this.getMdUrl();
     },
     renderMenuLi(item, idx) {
       if (!item.path) return "";
@@ -92,6 +96,11 @@ export default {
            ${getLang(`page.${this.getPageName(item.path)}`)}
           </a>
         </li>`;
+    },
+    getMdUrl() {
+      this.mdUrl = `https://github.com/shawn2016/isui-vue/blob/master/docs/md${
+        this.$route.path
+      }.md`;
     },
     getPageName(location) {
       const routes = location.match(/(?:\/(.+))?(\/(.+)\?|\/(.+))/);

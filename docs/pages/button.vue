@@ -1,33 +1,22 @@
 <template>
   <div >
-    <div v-for="x in newMarkdownList">
-    <Demo slot="demo" :description="x.description" :source="x.source" :highlight="x.highlight"></Demo>
-    </div>
+    <page-template :markdownString="markdownString"></page-template>
   </div>
 </template>
 
 <script>
-import Demo from "../../examples/components/demo";
+import pageTemplate from "../../examples/components/template";
 import markdownString from "../md/cn/button.md";
-import marked from "marked";
-import Vue from 'vue'
+import Vue from "vue";
 export default {
   name: "ButtonPage",
   components: {
-    Demo,
-    markdownString,
-    marked
-  },
-  data() {
-    return {
-      description: "",
-      newMarkdownList: []
-    };
+    "page-template": pageTemplate,
+    markdownString
   },
   created() {
-    this.newMarkdownList=this.getDomList(markdownString);
+    this.markdownString = markdownString;
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>

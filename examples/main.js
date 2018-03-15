@@ -10,8 +10,8 @@ import App from './App'
 import isui from '../src'
 import Routers from './router'
 import Env from './config/env'
-import './styles/hljs.css'
-import '../docs/style/base.less'
+import './style/hljs.css'
+import './style/base.less'
 import './index.less'
 Vue.config.productionTip = false
 
