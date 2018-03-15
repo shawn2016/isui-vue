@@ -40,7 +40,7 @@ isui-vue 的图标使用开源项目[** ionicons](http://ionicons.com/)
 ```
 <template>
     <Row style="margin-left: -15px; margin-right: -15px;">
-        <Col v-for="x in iconList" span="4" style="padding-left: 5px; padding-right: 5px;">
+        <Col v-for="x in iconList" span="6" style="padding-left: 5px; padding-right: 5px;">
             <div  style="text-align: center;padding: 20px 10px;background: rgb(244, 244, 244);margin-bottom: 10px;margin-left:5px;margin-right:5px">
             <Icon :type="x.type" style="font-size: 32px;"></Icon>
             <div style="color: #666;opacity: .7;">{{x.type}}</div>
