@@ -1,13 +1,61 @@
-Button 按钮
----
-基础组件，触发业务逻辑时使用。
+## Switch 开关
 
-### 按钮类型
+### 概述
 
-按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。
+在两种状态间切换时用到的开关选择器。
 
-通过设置`type`为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`创建不同样式的按钮，不设置为默认样式。
+```
+注意：没有使用 iview-loader 时，必须使用 i-switch 标签。
+```
+
 <!--divider-->
+
+### 基本
+
+基本用法，状态切换时会触发事件。
+
+```js
+<template>
+    <Switch value="switch1" @on-change="change"></Switch>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                switch1: false
+            }  
+        },
+        methods: {
+            change (status) {
+                this.$Message.info('开关状态：' + status);
+            }
+        }
+    }
+</script>
+```
+
+<!--divider-->
+
+### 尺寸
+
+设置`size`为 `large` 或 `small` 使用大号和小号的开关。
+
+```
+<template>
+    <Switch size="large"></Switch>
+    <Switch></Switch>
+    <Switch size="small"></Switch>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+
+```
+
+<!--divider-->
+
 ### ButtonGroup
 <!--table-->
 | 参数       | 说明                                       | 类型      | 默认值   |
