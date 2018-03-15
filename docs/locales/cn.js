@@ -5,7 +5,15 @@ module.exports = {
       'update': '更新日志',
      'recommendation':'精选开源组件',
      'button': 'Button 按钮',
-     'grid': 'Grid 栅格'
+     'grid': 'Grid 栅格',
+     'color': 'Color 色彩',
+     'font': 'Font 字体',
+     'icon': 'Icon 图标',
+     'input': 'Input 输入框',
+     
+     
+     
+     
      
     },
     category: {

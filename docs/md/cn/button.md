@@ -1,5 +1,5 @@
 Button 按钮
-===
+---
 基础组件，触发业务逻辑时使用。
 
 ### 按钮类型
@@ -109,14 +109,18 @@ Button 按钮
     <Button>Default</Button>
     <Button disabled>Default(Disabled)</Button>
     <br>
+    <br>
     <Button type="primary">Primary</Button>
     <Button type="primary" disabled>Primary(Disabled)</Button>
+    <br>
     <br>
     <Button type="ghost">Ghost</Button>
     <Button type="ghost" disabled>Ghost(Disabled)</Button>
     <br>
+    <br>
     <Button type="dashed">Dashed</Button>
     <Button type="dashed" disabled>Dashed(Disabled)</Button>
+    <br>
     <br>
     <Button type="text">Text</Button>
     <Button type="text" disabled>Text(Disabled)</Button>
@@ -301,16 +305,16 @@ Button 按钮
 
 
 ```js
-npm install uiw --save
+npm install isui-vue --save
 ```
 
 <!--divider-->
 
 
 ```js
-import { Button } from 'uiw';
+import { Button } from 'isui-vue';
 // or
-import Button from 'uiw/lib/button';
+import Button from 'isui-vue/lib/button';
 const ButtonGroup = Button.Group;
 ```
 
@@ -319,7 +323,7 @@ const ButtonGroup = Button.Group;
 ### Button
 <!--table-->
 | 参数        | 说明                                       | 类型      | 默认值    |
-| --------- | ---------------------------------------- | ------- | ------ |
+| :-------- | :--------------------------------------- | :------ | :----- |
 | type      | 按钮类型，可选值为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`或者不设置 | String  | -      |
 | size      | 按钮大小，可选值为`large`、`small`、`default`或者不设置  | String  | -      |
 | shape     | 按钮形状，可选值为`circle`或者不设置                   | String  | -      |
@@ -333,7 +337,7 @@ const ButtonGroup = Button.Group;
 ### ButtonGroup
 <!--table-->
 | 参数       | 说明                                       | 类型      | 默认值   |
-| -------- | ---------------------------------------- | ------- | ----- |
+| :------- | :--------------------------------------- | :------ | :---- |
 | size     | 按钮组合大小，可选值为`large`、`small`、`default`或者不设置 | String  | -     |
 | shape    | 按钮组合形状，可选值为`circle`或者不设置                 | String  | -     |
 | vertical | 是否纵向排列按钮组                                | Boolean | false |

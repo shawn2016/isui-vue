@@ -1,0 +1,14 @@
+<template>
+    <Row style="margin-left: -8px; margin-right: -8px;">
+        <Col span="3" style="padding-left: 8px;text-align:center; padding-right: 8px;">
+            <Icon type="ionic" style="font-size: 32px;"></Icon>
+            <div style="color: #666;opacity: .7;">ionic</div>
+        </Col>
+        
+    </Row>
+</template>
+<script>
+export default {
+
+}
+</script>

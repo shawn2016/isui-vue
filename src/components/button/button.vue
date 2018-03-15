@@ -12,10 +12,11 @@
 <script>
     import Icon from '../icon';
     import { oneOf } from '../../utils/assist';
+
     const prefixCls = 'ivu-btn';
 
     export default {
-        name: 'Buttona',
+        name: 'Button',
         components: { Icon },
         props: {
             type: {
@@ -77,6 +78,3 @@
         }
     };
 </script>
-<style lang="less">
-</style>
-
