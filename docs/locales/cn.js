@@ -1,34 +1,70 @@
 module.exports = {
-    page: {
-      'quick-start': '快速上手',
-      'theme': '定制主题',
-      'update': '更新日志',
-     'recommendation':'精选开源组件',
-     'button': 'Button 按钮',
-     'grid': 'Grid 栅格',
-     'color': 'Color 色彩',
-     'font': 'Font 字体',
-     'icon': 'Icon 图标',
-     'input': 'Input 输入框',
-     'radio': 'Radio 单选框',
-     
-     
-     
-     
-     
-     
-    },
-    category: {
-      'Form': "表单",
-      'Basic': "基本",
-      'Data Display': "数据显示",
-      'Navigation': "导航",
-      'Feedback': "反馈",
-      'Other': "其它",
-    },
-    markdown: {
-      'show': '显示代码',
-      'hide': '隐藏代码'
-    }
+  page: {
+    'quick-start': '快速上手',
+    'theme': '定制主题',
+    'update': '更新日志',
+    'recommendation': '精选开源组件',
+    'button': 'Button 按钮',
+    'grid': 'Grid 栅格',
+    'color': 'Color 色彩',
+    'font': 'Font 字体',
+    'icon': 'Icon 图标',
+    'input': 'Input 输入框',
+    'radio': 'Radio 单选框',
+    'checkbox': 'Checkbox 多选框',
+    'switch': 'Switch 开关',
+    'table': 'Table 表格',
+    'select': 'Select 选择器',
+    'auto-complete': 'AutoComplete 自动完成',
+    'slider': 'Slider 滑块',
+    'date-picker': 'DatePicker 日期选择器',
+    'time-picker': 'TimePicker 时间选择器',
+    'cascader': 'Cascader 级联选择',
+    'transfer': 'Transfer 穿梭框',
+    'input-number': 'InputNumber 数字输入框',
+    'rate': 'Rate 评分',
+    'upload': 'Upload 上传',
+    'color-picker': 'ColorPicker 颜色选择器',
+    'form': 'Form 表单',
+    'alert': 'Alert 警告提示',
+    'card': 'Card 卡片',
+    'message': 'Message 全局提示',
+    'notice': 'Notice 通知提醒',
+    'modal': 'Modal 对话框',
+    'progress': 'Progress 进度条',
+    'avatar': 'Avatar 头像',
+    'badge': 'Badge 徽标数',
+    'collapse': 'Collapse 折叠面板',
+    'timeline': 'Timeline 时间轴',
+    'tag': 'Tag 标签',
+    'tooltip': 'Tooltip 文字提示',
+    'poptip': 'Poptip 气泡提示',
+    'carousel': 'Carousel 走马灯',
+    'tree': 'Tree 树形控件',
+    'menu': 'Menu 导航菜单',
+    'tabs': 'Tabs 标签页',
+    'dropdown': 'Dropdown 下拉菜单',
+    'page': 'Page 分页',
+    'breadcrumb': 'Breadcrumb 面包屑',
+    'steps': 'Steps 步骤条',
+    'loading-bar': 'LoadingBar 加载进度条',
+    'circle': 'Circle 进度环',
+    'affix': 'Affix 图钉',
+    'back-top': 'BackTop 返回顶部',
+    'spin': 'Spin 加载中',
+    'scroll': 'Scroll 无限滚动'
+  },
+  category: {
+    'Form': "表单",
+    'Basic': "基本",
+    'View': "数据显示",
+    'Navigation': "导航",
+    'Chart':'图表',
+    'Feedback': "反馈",
+    'Other': "其它",
+  },
+  markdown: {
+    'show': '显示代码',
+    'hide': '隐藏代码'
   }
-  
+}
