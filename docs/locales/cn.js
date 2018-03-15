@@ -10,6 +10,8 @@ module.exports = {
      'font': 'Font 字体',
      'icon': 'Icon 图标',
      'input': 'Input 输入框',
+     'radio': 'Radio 单选框',
+     
      
      
      

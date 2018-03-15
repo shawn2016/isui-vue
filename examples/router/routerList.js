@@ -19,6 +19,7 @@ const routerList = {
         ],
         'Form': [
             { path: "/cn/input", component: _import('pages/input') },
+            { path: "/cn/radio", component: _import('pages/radio') },            
             // { path: "/cn/quick-start3", component: _import('components/quick-start3') },
             // { path: "/cn/quick-start4", component: _import('components/quick-start4') }
         ]
