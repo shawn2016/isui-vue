@@ -6,10 +6,10 @@
 
 <script>
 import pageTemplate from "../../examples/components/template";
-import markdownString from "../md/cn/button.md";
+import markdownString from "../md/cn/quick-start.md";
 import Vue from "vue";
 export default {
-  name: "buttonPage",
+  name: "quickStartPage",
   components: {
     "page-template": pageTemplate,
     markdownString

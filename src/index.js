@@ -1,9 +1,11 @@
 import Button from './components/button';
 import Icon from './components/icon';
+import { Row, Col } from './components/grid';
 
 const components = {
     Icon,
     Button,
+    Row, Col,
     ButtonGroup: Button.Group
 };
 
@@ -11,7 +13,7 @@ const iview = {
     ...components,
 };
 
-const install = function(Vue, opts = {}) {
+const install = function (Vue, opts = {}) {
     if (install.installed) return;
     Object.keys(iview).forEach(key => {
         Vue.component(key, iview[key]);

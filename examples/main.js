@@ -12,7 +12,8 @@ import Routers from './router'
 import Env from './config/env'
 import './style/hljs.css'
 import './style/base.less'
-import './index.less'
+// import './index.less'
+import '../src/styles/index.less'
 Vue.config.productionTip = false
 
 Vue.use(VueRouter)

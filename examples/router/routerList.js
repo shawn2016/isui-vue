@@ -1,11 +1,14 @@
 import _import from '../utils/_import_development'
 const routerList = {
     documents: [
-        { path: "/", component: _import('pages/home') },
-        // { path: "/cn/quick-start", component: _import('components/quick-start') }
+        { path: "/cn/quick-start", component: _import('pages/quick-start') },
+        { path: "/cn/theme", component: _import('pages/theme') },
+        { path: "/cn/update", component: _import('pages/update') },
+        { path: "/cn/recommendation", component: _import('pages/recommendation') }
     ],
     components: {
         'Basic': [
+            { path: "/cn/grid", component: _import('pages/grid') },            
             { path: "/cn/button", component: _import('pages/button') },
             // { path: "/cn/quick-start2", component: _import('components/quick-start2') }
         ],

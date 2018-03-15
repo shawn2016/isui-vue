@@ -77,6 +77,6 @@
         }
     };
 </script>
-<style lang="less" src="./style/index.less">
+<style lang="less">
 </style>
 

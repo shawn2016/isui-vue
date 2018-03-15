@@ -6,10 +6,10 @@
 
 <script>
 import pageTemplate from "../../examples/components/template";
-import markdownString from "../md/cn/button.md";
+import markdownString from "../md/cn/recommendation.md";
 import Vue from "vue";
 export default {
-  name: "buttonPage",
+  name: "recommendationPage",
   components: {
     "page-template": pageTemplate,
     markdownString

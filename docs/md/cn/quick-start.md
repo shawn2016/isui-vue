@@ -1,0 +1,104 @@
+安装
+===
+
+```
+npm install uiw --save
+
+# 通过GitHub仓库安装
+npm i -S uiw-react/uiw
+# 指定版本
+npm i -S uiw-react/uiw#v1.2.12
+# 或者
+yarn add uiw-react/uiw
+```
+
+<!--divider-->
+
+ps: **通过GitHub仓库安装**的 win 用户请在 `Git Bash` 下执行，因为需要用到 git。
+
+### 使用
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Button } from 'uiw';
+
+ReactDOM.render(
+  <Button type="primary">Hello</Button>, 
+  document.getElementById('app')
+);
+```
+<!--divider-->
+
+### 组件冲突
+
+重新取一个名字
+
+```js
+import { Button as ButtonView } from 'uiw';
+```
+
+<!--divider-->
+
+### 按需加载组件
+
+```Js
+- import { Alert } from 'uiw';
++ import { Alert } from 'uiw/lib/alert';
+```
+
+<!--divider-->
+
+### 开发
+
+要开发，运行自重新构建，获取代码：
+
+```
+$ git clone https://github.com/uiw-react/uiw.git
+$ cd uiw
+$ npm install # or  yarn install
+# or 解决phantomjs下载失败问题
+$ npm install --phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
+```
+
+<!--divider-->
+
+要开发，运行自重新构建
+
+```
+# Run the app
+# Restart the app automatically every time code changes. 
+# Useful during development.
+$ npm start
+```
+
+<!--divider-->
+
+打开浏览器并访问：[http://127.0.0.1:2087](http://127.0.0.1:2087/)
+
+### 更新文档
+
+```
+npm run deploy
+```
+
+<!--divider-->
+
+### 文件目录说明
+
+```
+├── dist           # 生成的文档静态文件目录
+├── docs           # 文档的源文件
+├── lib            
+├── package.json
+├── script
+└── src            # React组件在此
+```
+
+<!--divider-->
+
+## License
+
+Licensed under the MIT License.
+
+<!--divider-->
