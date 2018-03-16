@@ -6,7 +6,7 @@
      <a href="https://github.com/shawn2016/isui-vue"><img src="http://nodedai.com/isui/static/media/logo.fef9640b.png" alt="logo" /><span>{{packageValue.name}} <i class="version">{{packageValue.version}} </i> <sup>beta</sup></span></a>
     </div>
     <ul class="is-docs-menu-list">
-     <li v-html="menuList"></li>
+     <li ref="markedContent"></li>
     </ul>
     <div class="is-docs-info">
      <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawn2016/isui-vue/issues"><i class="is-icon-message"></i> 反馈建议</a>
@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import Vue from "vue";
 import BackToTop from "vue-backtotop";
 import routes from "./router/routerList";
 import { getLang } from "./utils/getLang";
@@ -49,7 +50,7 @@ export default {
     return {
       menuList: "",
       mdUrl: "",
-      packageValue
+      packageValue,
     };
   },
   mounted() {
@@ -81,21 +82,37 @@ export default {
       }
       this.menuList = html.replace(/,/g, "");
       this.getMdUrl();
+      this.compile();
     },
     renderMenuLi(item, idx) {
+      this._item = item;
       if (!item.path) return "";
       if (
         this.getPageName(window.location.href) === this.getPageName(item.path)
       ) {
-        return `<li key=${idx} class="active" key={idx}>
+        return `<li  class="active" key='${idx}'>
             ${getLang(`page.${this.getPageName(item.path)}`)}
           </li>`;
       }
-      return `<li key=${idx}>
-          <a href=/${this.getLangName()}/${this.getPageName(item.path)} >
+      return `<li key='${idx}'>
+          <a @click=goto($event) title=${item.path} >
            ${getLang(`page.${this.getPageName(item.path)}`)}
           </a>
         </li>`;
+    },
+    compile() {
+      let _this = this;
+      const Component = Vue.extend({
+        template: `<span>${this.menuList}</span>`,
+        methods: {
+          goto(e) {
+            _this.$router.push(e.target.title);
+            _this.isROuter=window.location.href;
+          }
+        }
+      });
+      const markedComponent = new Component().$mount();
+      this.$refs["markedContent"].appendChild(markedComponent.$el);
     },
     getMdUrl() {
       this.mdUrl = `https://github.com/shawn2016/isui-vue/blob/master/docs/md${

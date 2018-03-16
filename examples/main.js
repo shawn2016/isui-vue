@@ -11,6 +11,7 @@ import isui from '../src'
 import Routers from './router'
 import Env from './config/env'
 import './style/hljs.css'
+import bus from './components/bus';
 import './style/base.less'
 // import './index.less'
 import '../src/styles/index.less'
@@ -28,14 +29,33 @@ if (Env !== 'local') {
   RouterConfig.mode = 'history'
 }
 const router = new VueRouter(RouterConfig)
-
+let routerArr = [];
+const isRouter = function (params, next, to) {
+  if (params.includes(to.path)) {
+    next()
+  } else {
+    router.push('/cn/quick-start')
+  }
+}
 router.beforeEach((to, from, next) => {
-  console.log('进入router...')
-  next()
+  isui.LoadingBar.start();
+
+  bus.loading = true;
+  if (routerArr && routerArr.length !== 0) {
+    isRouter(routerArr, next, to)
+  } else {
+    for (let i = 0; i < router.options.routes.length; i++) {
+      routerArr.push(router.options.routes[i].path)
+    }
+    isRouter(routerArr, next, to)
+  }
+
 })
 
 router.afterEach((to, from, next) => {
-  console.log('退出router...')
+  isui.LoadingBar.finish();
+  bus.loading = false;
+  window.scrollTo(0, 0);
 })
 
 new Vue({
