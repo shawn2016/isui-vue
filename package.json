@@ -13,10 +13,7 @@
     "build": "node build/build.js",
     "build:lib": "BABEL_ENV=production build --out-dir lib --copy-files ",
     "prepublish": "node build-node.js",
-    "copymd": "node docs/node",
-    "table": "node docs/node/table-md.js",
-    "title": "node docs/node/title-md.js",
-    "ku":"npm run table && npm run title"       
+    "copymd": "node docs/node"
   },
   "dependencies": {
     "async-validator": "^1.8.2",
