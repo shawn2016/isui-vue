@@ -50,7 +50,7 @@ export default {
     return {
       menuList: "",
       mdUrl: "",
-      packageValue,
+      packageValue
     };
   },
   mounted() {
@@ -90,12 +90,14 @@ export default {
       if (
         this.getPageName(window.location.href) === this.getPageName(item.path)
       ) {
-        return `<li  class="active" key='${idx}'>
+        return `<li  class="active" href="item.path" key='${idx}'>
+        <a @click=goto($event) title=${item.path} >
             ${getLang(`page.${this.getPageName(item.path)}`)}
+            </a>
           </li>`;
       }
       return `<li key='${idx}'>
-          <a @click=goto($event) title=${item.path} >
+          <a @click=goto($event) href=${item.path} title=${item.path} >
            ${getLang(`page.${this.getPageName(item.path)}`)}
           </a>
         </li>`;
@@ -106,8 +108,8 @@ export default {
         template: `<span>${this.menuList}</span>`,
         methods: {
           goto(e) {
-            _this.$router.push(e.target.title);
-            _this.isROuter=window.location.href;
+            // _this.$router.push(e.target.title);
+            // _this.isROuter = window.location.href;
           }
         }
       });
