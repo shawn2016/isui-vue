@@ -22,7 +22,15 @@ isui-vue
 - 使用了cheerio对html进行解析，实现了一般table转成markdown写法
 
 ### 预览效果
-
+<p align="center">
+<a href="https://github.com/shawn2016/isui-vue.git"><img src="https://github.com/shawn2016/isui-vue/blob/master/static/home.png" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/shawn2016/isui-vue.git"><img src="https://github.com/shawn2016/isui-vue/blob/master/static/color.png" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/shawn2016/isui-vue.git"><img src="https://github.com/shawn2016/isui-vue/blob/master/static/md.png" /></a>
+</p>
 ## Build Setup
 
 ``` bash
