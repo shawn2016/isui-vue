@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:8085/components/modal -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="description" content="A High quality and rich functions, friendly APIs, free and flexible UI Toolkit based on Vue.js.">
+    <title>modal</title>
+    <link rel="shortcut icon" href="https://file.iviewui.com/file/favicon.ico">
+    <link rel="stylesheet" href="./modal_files/main.css">
+<script async="" src="./modal_files/analytics.js"></script><script src="./modal_files/hm.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/66.chunk.js"></script><script type="text/javascript" src="./modal_files/sdk_release.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/89.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/74.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/28.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/95.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/8.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/49.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/102.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/53.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/82.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/80.chunk.js"></script><script type="text/javascript" charset="utf-8" async="" src="./modal_files/13.chunk.js"></script></head>
+<body>
+    <div data-v-6c0a0fc1=""><div data-v-6c0a0fc1=""><div class="wrapper"><div class="wrapper-header"><ul class="ivu-menu ivu-menu-light ivu-menu-horizontal"><div class="wrapper-header-nav"><a href="http://127.0.0.1:8085/" class="wrapper-header-nav-logo router-link-active"><img src="./modal_files/03635a3c88122ad605117128f3fda0ca.png"></a> <div class="wrapper-header-nav-search"><div class="ivu-select ivu-select-single"><div class="ivu-select-selection"><input type="hidden">  <span class="ivu-select-placeholder" style="display: none;">搜索组件...</span> <span class="ivu-select-selected-value" style="display: none;"></span> <input type="text" placeholder="搜索组件..." autocomplete="off" spellcheck="false" class="ivu-select-input"> <i class="ivu-icon ivu-icon-ios-close ivu-select-arrow" style="display: none;"></i> <i class="ivu-icon ivu-icon-arrow-down-b ivu-select-arrow"></i></div> <div class="ivu-select-dropdown" style="display: none;"><ul class="ivu-select-not-found" style="display: none;"><li>没有找到相关组件</li></ul> <ul class="ivu-select-dropdown-list"><li class="ivu-select-item">Grid 栅格</li><li class="ivu-select-item">Layout 布局</li><li class="ivu-select-item">Color 色彩</li><li class="ivu-select-item">Font 字体</li><li class="ivu-select-item">Button 按钮</li><li class="ivu-select-item">Icon 图标</li><li class="ivu-select-item">Input 输入框</li><li class="ivu-select-item">Radio 单选框</li><li class="ivu-select-item">Checkbox 多选框</li><li class="ivu-select-item">Switch 开关</li><li class="ivu-select-item">Table 表格</li><li class="ivu-select-item">Select 选择器</li><li class="ivu-select-item">AutoComplete 自动完成</li><li class="ivu-select-item">Slider 滑块</li><li class="ivu-select-item">DatePicker 日期选择器</li><li class="ivu-select-item">TimePicker 时间选择器</li><li class="ivu-select-item">Cascader 级联选择</li><li class="ivu-select-item">Transfer 穿梭框</li><li class="ivu-select-item">InputNumber 数字输入框</li><li class="ivu-select-item">Rate 评分</li><li class="ivu-select-item">Upload 上传</li><li class="ivu-select-item">ColorPicker 颜色选择器</li><li class="ivu-select-item">Form 表单</li><li class="ivu-select-item">Alert 警告提示</li><li class="ivu-select-item">Card 卡片</li><li class="ivu-select-item">Message 全局提示</li><li class="ivu-select-item">Notice 通知提醒</li><li class="ivu-select-item">Modal 对话框</li><li class="ivu-select-item">Progress 进度条</li><li class="ivu-select-item">Avatar 头像</li><li class="ivu-select-item">Badge 徽标数</li><li class="ivu-select-item">Collapse 折叠面板</li><li class="ivu-select-item">Timeline 时间轴</li><li class="ivu-select-item">Tag 标签</li><li class="ivu-select-item">Tooltip 文字提示</li><li class="ivu-select-item">Poptip 气泡提示</li><li class="ivu-select-item">Carousel 走马灯</li><li class="ivu-select-item">Tree 树形控件</li><li class="ivu-select-item">Menu 导航菜单</li><li class="ivu-select-item">Tabs 标签页</li><li class="ivu-select-item">Dropdown 下拉菜单</li><li class="ivu-select-item">Page 分页</li><li class="ivu-select-item">Breadcrumb 面包屑</li><li class="ivu-select-item">Steps 步骤条</li><li class="ivu-select-item">LoadingBar 加载进度条</li><li class="ivu-select-item">Circle 进度环</li><li class="ivu-select-item">Affix 图钉</li><li class="ivu-select-item">BackTop 返回顶部</li><li class="ivu-select-item">Spin 加载中</li><li class="ivu-select-item">Scroll 无限滚动</li></ul> <ul class="ivu-select-loading" style="display: none;">加载中</ul></div></div></div> <div class="wrapper-header-nav-list"><li class="ivu-menu-item"><i class="ivu-icon ivu-icon-ios-navigate"></i>
+                指南
+            </li> <li class="ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i class="ivu-icon ivu-icon-ios-keypad"></i>
+                组件
+            </li> <li class="ivu-menu-item"><span class="ivu-badge"><i class="ivu-icon ivu-icon-ios-videocam"></i>
+                    教程
+                 <sup class="ivu-badge-dot"></sup></span></li> <li class="ivu-menu-item"><i class="ivu-icon ivu-icon-ios-analytics"></i>
+                实践
+            </li> <li class="ivu-menu-submenu"><div class="ivu-menu-submenu-title"><i class="ivu-icon ivu-icon-ios-infinite"></i>
+                    生态
+                 <i class="ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon"></i></div> <div class="ivu-select-dropdown" style="display: none;"><ul class="ivu-menu-drop-list"> <li class="ivu-menu-item">
+                    iView Cli
+                </li> <li class="ivu-menu-item">
+                    iView Loader
+                </li> <li class="ivu-menu-item">
+                    iView Admin
+                </li> <li class="ivu-menu-item">
+                    iView Area
+                </li></ul></div></li> <div class="ivu-btn-group"><button type="button" class="ivu-btn ivu-btn-ghost ivu-btn-small ivu-btn-icon-only"><!----> <i class="ivu-icon ivu-icon-social-github"></i> <!----></button> <button type="button" class="ivu-btn ivu-btn-ghost ivu-btn-small ivu-btn-icon-only"><!----> <i class="ivu-icon ivu-icon-social-twitter"></i> <!----></button> <button type="button" class="ivu-btn ivu-btn-ghost ivu-btn-small"><!----> <!----> <span>EN</span></button></div></div></div></ul></div> <div class="wrapper-container"><div class="ivu-row"><div class="wrapper-navigate ivu-col ivu-col-span-4"><div data-v-39279dfe="" class="navigate"><div data-v-39279dfe="" class="asd"><div data-v-39279dfe="" class="asd-main"><img data-v-39279dfe="" src="./modal_files/ec11a83d8219506c7bf1005f26733fbb.jpg" style="border-radius: 6px;"> <div data-v-39279dfe="" class="advertisement-ad"></div></div></div> <!----> <ul data-v-39279dfe="" class="ivu-menu ivu-menu-light ivu-menu-vertical" style="width: auto;"><li data-v-39279dfe="" class="ivu-menu-item">安装 <!----></li><li data-v-39279dfe="" class="ivu-menu-item">快速上手 <!----></li><li data-v-39279dfe="" class="ivu-menu-item">国际化 <!----></li><li data-v-39279dfe="" class="ivu-menu-item">定制主题 <!----></li><li data-v-39279dfe="" class="ivu-menu-item">iView Loader <!----></li><li data-v-39279dfe="" class="ivu-menu-item">概览 <!----></li><li data-v-39279dfe="" class="ivu-menu-item"><!----> <span data-v-39279dfe="" class="ivu-badge">更新日志 <sup class="ivu-badge-dot"></sup></span></li> <div data-v-39279dfe="" class="navigate-group">组件</div> <li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">Basic</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-grid-view-outline"></i> 
+                    Grid
+                    <span data-v-39279dfe="" class="navigate-group-span">栅格</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-browsers-outline"></i> 
+                    Layout
+                    <span data-v-39279dfe="" class="navigate-group-span">布局</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-android-color-palette"></i> 
+                    Color
+                    <span data-v-39279dfe="" class="navigate-group-span">色彩</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-at"></i> 
+                    Font
+                    <span data-v-39279dfe="" class="navigate-group-span">字体</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-social-youtube-outline"></i> 
+                    Button
+                    <span data-v-39279dfe="" class="navigate-group-span">按钮</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-heart-outline"></i> 
+                    Icon
+                    <span data-v-39279dfe="" class="navigate-group-span">图标</span></li></ul></li><li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">Form</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-compose-outline"></i> 
+                    Input
+                    <span data-v-39279dfe="" class="navigate-group-span">输入框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-circle-filled"></i> 
+                    Radio
+                    <span data-v-39279dfe="" class="navigate-group-span">单选框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-android-checkbox-outline"></i> 
+                    Checkbox
+                    <span data-v-39279dfe="" class="navigate-group-span">多选框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-toggle"></i> 
+                    Switch
+                    <span data-v-39279dfe="" class="navigate-group-span">开关</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-grid-view"></i> 
+                    Table
+                    <span data-v-39279dfe="" class="navigate-group-span">表格</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-arrow-down"></i> 
+                    Select
+                    <span data-v-39279dfe="" class="navigate-group-span">选择器</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-list-outline"></i> 
+                    AutoComplete
+                    <span data-v-39279dfe="" class="navigate-group-span">自动完成</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-minus-round"></i> 
+                    Slider
+                    <span data-v-39279dfe="" class="navigate-group-span">滑块</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-calendar-outline"></i> 
+                    DatePicker
+                    <span data-v-39279dfe="" class="navigate-group-span">日期选择器</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-clock-outline"></i> 
+                    TimePicker
+                    <span data-v-39279dfe="" class="navigate-group-span">时间选择器</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-more-outline"></i> 
+                    Cascader
+                    <span data-v-39279dfe="" class="navigate-group-span">级联选择</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-pause-outline"></i> 
+                    Transfer
+                    <span data-v-39279dfe="" class="navigate-group-span">穿梭框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-calculator"></i> 
+                    InputNumber
+                    <span data-v-39279dfe="" class="navigate-group-span">数字输入框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-star"></i> 
+                    Rate
+                    <span data-v-39279dfe="" class="navigate-group-span">评分</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-cloud-upload-outline"></i> 
+                    Upload
+                    <span data-v-39279dfe="" class="navigate-group-span">上传</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-android-color-palette"></i> 
+                    ColorPicker
+                    <span data-v-39279dfe="" class="navigate-group-span">颜色选择器</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-list-outline"></i> 
+                    Form
+                    <span data-v-39279dfe="" class="navigate-group-span">表单</span></li></ul></li><li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">View</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-alert"></i> 
+                    Alert
+                    <span data-v-39279dfe="" class="navigate-group-span">警告提示</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-browsers-outline"></i> 
+                    Card
+                    <span data-v-39279dfe="" class="navigate-group-span">卡片</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-information-outline"></i> 
+                    Message
+                    <span data-v-39279dfe="" class="navigate-group-span">全局提示</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-bell-outline"></i> 
+                    Notice
+                    <span data-v-39279dfe="" class="navigate-group-span">通知提醒</span></li><li data-v-39279dfe="" class="ivu-menu-item ivu-menu-item-active ivu-menu-item-selected"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-chatbubble-outline"></i> 
+                    Modal
+                    <span data-v-39279dfe="" class="navigate-group-span">对话框</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-android-remove"></i> 
+                    Progress
+                    <span data-v-39279dfe="" class="navigate-group-span">进度条</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-person"></i> 
+                    Avatar
+                    <span data-v-39279dfe="" class="navigate-group-span">头像</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-email-unread"></i> 
+                    Badge
+                    <span data-v-39279dfe="" class="navigate-group-span">徽标数</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-albums-outline"></i> 
+                    Collapse
+                    <span data-v-39279dfe="" class="navigate-group-span">折叠面板</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-android-more-vertical"></i> 
+                    Timeline
+                    <span data-v-39279dfe="" class="navigate-group-span">时间轴</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-pricetags-outline"></i> 
+                    Tag
+                    <span data-v-39279dfe="" class="navigate-group-span">标签</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-chatbox-working"></i> 
+                    Tooltip
+                    <span data-v-39279dfe="" class="navigate-group-span">文字提示</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-chatbubble-working"></i> 
+                    Poptip
+                    <span data-v-39279dfe="" class="navigate-group-span">气泡提示</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-film-outline"></i> 
+                    Carousel
+                    <span data-v-39279dfe="" class="navigate-group-span">走马灯</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-network"></i> 
+                    Tree
+                    <span data-v-39279dfe="" class="navigate-group-span">树形控件</span></li></ul></li><li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">Navigation</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-navicon-round"></i> 
+                    Menu
+                    <span data-v-39279dfe="" class="navigate-group-span">导航菜单</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-social-windows-outline"></i> 
+                    Tabs
+                    <span data-v-39279dfe="" class="navigate-group-span">标签页</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-arrow-down-b"></i> 
+                    Dropdown
+                    <span data-v-39279dfe="" class="navigate-group-span">下拉菜单</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-book-outline"></i> 
+                    Page
+                    <span data-v-39279dfe="" class="navigate-group-span">分页</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-arrow-right"></i> 
+                    Breadcrumb
+                    <span data-v-39279dfe="" class="navigate-group-span">面包屑</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-checkmark-outline"></i> 
+                    Steps
+                    <span data-v-39279dfe="" class="navigate-group-span">步骤条</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-minus-empty"></i> 
+                    LoadingBar
+                    <span data-v-39279dfe="" class="navigate-group-span">加载进度条</span></li></ul></li><li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">Chart</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-circle-outline"></i> 
+                    Circle
+                    <span data-v-39279dfe="" class="navigate-group-span">进度环</span></li></ul></li><li data-v-39279dfe="" class="ivu-menu-item-group"><div class="ivu-menu-item-group-title">Other</div> <ul><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-pin"></i> 
+                    Affix
+                    <span data-v-39279dfe="" class="navigate-group-span">图钉</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-arrow-up"></i> 
+                    BackTop
+                    <span data-v-39279dfe="" class="navigate-group-span">返回顶部</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-load-d"></i> 
+                    Spin
+                    <span data-v-39279dfe="" class="navigate-group-span">加载中</span></li><li data-v-39279dfe="" class="ivu-menu-item"><i data-v-39279dfe="" class="ivu-icon ivu-icon-ios-more"></i> 
+                    Scroll
+                    <span data-v-39279dfe="" class="navigate-group-span">无限滚动</span></li></ul></li></ul> <!----> <!----> <!----></div></div> <div class="ivu-col ivu-col-span-17"><div class="wrapper-content ivu-article"><article><h1>Modal 对话框</h1> <div class="anchor"><!----> <h2 id="概述">概述</h2> <!----> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#%E6%A6%82%E8%BF%B0">#</a></div> <p>模态对话框，在浮层中显示，引导用户进行相关操作。</p> <p><code>Modal</code>提供了两种用法，普通组件使用和封装好的简洁实例调用。</p> <div class="anchor"><!----> <h2 id="代码示例">代码示例</h2> <!----> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B">#</a></div> <div class="anchor"><!----> <!----> <h3 id="普通组件使用方法">普通组件使用方法</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#%E6%99%AE%E9%80%9A%E7%BB%84%E4%BB%B6%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">#</a></div> <div class="example ivu-row" id="基础用法"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn ivu-btn-primary"><!----> <!----> <span>显示对话框</span></button> <!----></div></div> <header class="example-header"><span>
+                基础用法
+                <a href="http://127.0.0.1:8085/components/modal#%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95">#</a></span></header> <div class="example-desc"><div><p>最简单的使用方法，通过控制属性<code>visible</code>来显示 / 隐藏对话框。</p> <p>可以使用 v-model 实现双向绑定。</p> <p>默认按键盘<code>ESC</code>键也可以关闭。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 210px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal1 = true"</span>&gt;</span>Display dialog box<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal1"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Common Modal dialog box title"</span>
+        @<span class="hljs-attribute">on-ok</span>=<span class="hljs-value">"ok"</span>
+        @<span class="hljs-attribute">on-cancel</span>=<span class="hljs-value">"cancel"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal1: <span class="hljs-literal">false</span>
+            }
+        },
+        methods: {
+            ok () {
+                <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked ok'</span>);
+            },
+            cancel () {
+                <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked cancel'</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="自定义样式"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn"><!----> <!----> <span>自定义页头和页脚</span></button> <!----> <button type="button" class="ivu-btn"><!----> <!----> <span>不带标题栏</span></button> <!----> <button type="button" class="ivu-btn"><!----> <!----> <span>国际化</span></button> <!----> <button type="button" class="ivu-btn"><!----> <!----> <span>设置宽度</span></button> <!----></div></div> <header class="example-header"><span>
+                自定义样式
+                <a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F">#</a></span></header> <div class="example-desc"><div><p>Modal 组件提供了灵活的自定义样式 API 和 Slot，可以自由控制整个 Modal 的各个组成部分，比如页头、页脚、关闭按钮。</p> <p>通过和其它组件的交互，能实现更复杂的功能，满足了大多业务场景。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 197px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal2 = true"</span>&gt;</span>Custom header and footer<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal2"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"360"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">slot</span>=<span class="hljs-value">"header"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"color:#f60;text-align:center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"information-circled"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">Icon</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Delete confirmation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"text-align:center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>After this task is deleted, the downstream 10 tasks will not be implemented.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Will you delete it?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">slot</span>=<span class="hljs-value">"footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"large"</span> <span class="hljs-attribute">long</span> <span class="hljs-attribute">:loading</span>=<span class="hljs-value">"modal_loading"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"del"</span>&gt;</span>Delete<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal3 = true"</span>&gt;</span>No title bar<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal4 = true"</span>&gt;</span>Internationalization<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal4"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Modal Title"</span>
+        <span class="hljs-attribute">ok-text</span>=<span class="hljs-value">"OK"</span>
+        <span class="hljs-attribute">cancel-text</span>=<span class="hljs-value">"Cancel"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal5 = true"</span>&gt;</span>Set the width<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal5"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Custom width"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"300"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Customize width, unit px, default 520px.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The width of the dialog box is responsive, and the width becomes <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> when the screen size is less than 768px.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal2: <span class="hljs-literal">false</span>,
+                modal_loading: <span class="hljs-literal">false</span>,
+                modal3: <span class="hljs-literal">false</span>,
+                modal4: <span class="hljs-literal">false</span>,
+                modal5: <span class="hljs-literal">false</span>
+            }
+        },
+        methods: {
+            del () {
+                <span class="hljs-keyword">this</span>.modal_loading = <span class="hljs-literal">true</span>;
+                setTimeout(() =&gt; {
+                    <span class="hljs-keyword">this</span>.modal_loading = <span class="hljs-literal">false</span>;
+                    <span class="hljs-keyword">this</span>.modal2 = <span class="hljs-literal">false</span>;
+                    <span class="hljs-keyword">this</span>.$Message.success(<span class="hljs-string">'Successfully delete'</span>);
+                }, <span class="hljs-number">2000</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="异步关闭"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn ivu-btn-primary"><!----> <!----> <span>显示对话框</span></button> <!----></div></div> <header class="example-header"><span>
+                异步关闭
+                <a href="http://127.0.0.1:8085/components/modal#%E5%BC%82%E6%AD%A5%E5%85%B3%E9%97%AD">#</a></span></header> <div class="example-desc"><div><p>给<code>Modal</code>添加属性<code>loading</code>后，点击确定按钮对话框不会自动消失，并显示 loading 状态，需要手动关闭对话框，常用于表单提交。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 178px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal6 = true"</span>&gt;</span>Display dialog box<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal6"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">:loading</span>=<span class="hljs-value">"loading"</span>
+        @<span class="hljs-attribute">on-ok</span>=<span class="hljs-value">"asyncOK"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>After you click ok, the dialog box will close in 2 seconds.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal6: <span class="hljs-literal">false</span>,
+                loading: <span class="hljs-literal">true</span>
+            }
+        },
+        methods: {
+            asyncOK () {
+                setTimeout(() =&gt; {
+                    <span class="hljs-keyword">this</span>.modal6 = <span class="hljs-literal">false</span>;
+                }, <span class="hljs-number">2000</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="禁用关闭"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn"><!----> <!----> <span>禁用右上角关闭（含Esc键）</span></button> <!----> <button type="button" class="ivu-btn"><!----> <!----> <span>禁用遮罩层关闭</span></button> <!----></div></div> <header class="example-header"><span>
+                禁用关闭
+                <a href="http://127.0.0.1:8085/components/modal#%E7%A6%81%E7%94%A8%E5%85%B3%E9%97%AD">#</a></span></header> <div class="example-desc"><div><p>可以禁用关闭和遮罩层关闭。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 156px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal7 = true"</span>&gt;</span>Disable upper right corner (including Esc key)<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal7"</span>
+        <span class="hljs-attribute">:closable</span>=<span class="hljs-value">"false"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal8 = true"</span>&gt;</span>Disable mask layer closure<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal8"</span>
+        <span class="hljs-attribute">:mask-closable</span>=<span class="hljs-value">"false"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal7: <span class="hljs-literal">false</span>,
+                modal8: <span class="hljs-literal">false</span>,
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="自定义位置"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn"><!----> <!----> <span>距离顶部 20px</span></button> <!----> <button type="button" class="ivu-btn"><!----> <!----> <span>垂直居中</span></button> <!----></div></div> <header class="example-header"><span>
+                自定义位置
+                <a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BD%8D%E7%BD%AE">#</a></span></header> <div class="example-desc"><div><p>可以自定义 Modal 的对话框样式 以及 对话框 Wrap 的 class 名称，从而实现更多自定义的样式，比如垂直居中。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 174px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"less"</span>&gt;</span><span class="css">
+    <span class="hljs-class">.vertical-center-modal</span><span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> center</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">justify-content</span>:<span class="hljs-value"> center</span></span>;
+
+        .ivu-modal{
+            <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+        }</span>
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal9 = true"</span>&gt;</span>20px from the top<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal9"</span>
+        <span class="hljs-attribute">:styles</span>=<span class="hljs-value">"{top: '20px'}"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal10 = true"</span>&gt;</span>Vertical center<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal10"</span>
+        <span class="hljs-attribute">class-name</span>=<span class="hljs-value">"vertical-center-modal"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal9: <span class="hljs-literal">false</span>,
+                modal10: <span class="hljs-literal">false</span>,
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="anchor"><!----> <!----> <h3 id="实例化使用方法">实例化使用方法</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#%E5%AE%9E%E4%BE%8B%E5%8C%96%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">#</a></div> <p>除了上述通过标准组件的使用方法，iView 还精心封装了一些实例方法，用来创建一次性的轻量级对话框。</p> <p>实例以隐式创建 Vue 组件的方式在全局创建一个对话框，并在消失时移除，所以同时只能操作一个对话框。</p> <div class="example ivu-row" id="基本用法"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn"><!----> <!----> <span>消息</span></button> <button type="button" class="ivu-btn"><!----> <!----> <span>成功</span></button> <button type="button" class="ivu-btn"><!----> <!----> <span>警告</span></button> <button type="button" class="ivu-btn"><!----> <!----> <span>错误</span></button></div></div> <header class="example-header"><span>
+                基本用法
+                <a href="http://127.0.0.1:8085/components/modal#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">#</a></span></header> <div class="example-desc"><div><p>四种基本的对话框，只提供一个确定按钮。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 156px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('info')"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('success')"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('warning')"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('error')"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            instance (type) {
+                <span class="hljs-keyword">const</span> title = <span class="hljs-string">'Title'</span>;
+                <span class="hljs-keyword">const</span> content = <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>;
+                <span class="hljs-keyword">switch</span> (type) {
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'info'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.info({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'success'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.success({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'warning'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.warning({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'error'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.error({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                }
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="确认对话框"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><button type="button" class="ivu-btn"><!----> <!----> <span>标准</span></button> <button type="button" class="ivu-btn"><!----> <!----> <span>自定义按钮文字</span></button> <button type="button" class="ivu-btn"><!----> <!----> <span>异步关闭</span></button></div></div> <header class="example-header"><span>
+                确认对话框
+                <a href="http://127.0.0.1:8085/components/modal#%E7%A1%AE%E8%AE%A4%E5%AF%B9%E8%AF%9D%E6%A1%86">#</a></span></header> <div class="example-desc"><div><p>快速弹出确认对话框，并且可以自定义按钮文字及异步关闭。</p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 156px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"confirm"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"custom"</span>&gt;</span>Custom button text<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"async"</span>&gt;</span>Asynchronous closing<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            confirm () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>,
+                    onOk: () =&gt; {
+                        <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked ok'</span>);
+                    },
+                    onCancel: () =&gt; {
+                        <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked cancel'</span>);
+                    }
+                });
+            },
+            custom () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>,
+                    okText: <span class="hljs-string">'OK'</span>,
+                    cancelText: <span class="hljs-string">'Cancel'</span>
+                });
+            },
+            <span class="hljs-keyword">async</span> () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;The dialog box will be closed after 2 seconds&lt;/p&gt;'</span>,
+                    loading: <span class="hljs-literal">true</span>,
+                    onOk: () =&gt; {
+                        setTimeout(() =&gt; {
+                            <span class="hljs-keyword">this</span>.$Modal.remove();
+                            <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Asynchronously close the dialog box'</span>);
+                        }, <span class="hljs-number">2000</span>);
+                    }
+                });
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div class="example ivu-row" id="自定义内容"><div class="example-demo ivu-col ivu-col-span-12"><div class="example-case"><div><p>
+                    姓名：
+                </p> <p><button type="button" class="ivu-btn"><!----> <!----> <span>自定义内容</span></button></p></div></div> <header class="example-header"><span>
+                自定义内容
+                <a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9">#</a></span></header> <div class="example-desc"><div><p>使用 <code>render</code> 字段可以基于 Render 函数来自定义内容。</p> <p>使用 render 后，将不再限制类型，content 也将无效。</p> <p><span><a href="https://segmentfault.com/l/1500000008892728" target="_blank"><i class="ivu-icon ivu-icon-social-youtube-outline"></i> <span> 学习 Render 函数的内容</span></a> <!----> <!----></span></p></div></div></div> <div class="example-split"></div> <div class="example-code ivu-col ivu-col-span-12" style="height: 237px;"><div style="opacity: 1;"><div data-v-c2ff9106=""><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Name: {{ value }}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"handleRender"</span>&gt;</span>Custom content<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                value: <span class="hljs-string">''</span>
+            }            
+        },
+        methods: {
+            handleRender () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    render: (h) =&gt; {
+                        <span class="hljs-keyword">return</span> h(<span class="hljs-string">'Input'</span>, {
+                            props: {
+                                value: <span class="hljs-keyword">this</span>.value,
+                                autofocus: <span class="hljs-literal">true</span>,
+                                placeholder: <span class="hljs-string">'Please enter your name...'</span>
+                            },
+                            on: {
+                                input: (val) =&gt; {
+                                    <span class="hljs-keyword">this</span>.value = val;
+                                }
+                            }
+                        })
+                    }
+                })
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre> <span data-v-c2ff9106="" class="open-fiddle"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-code-working" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="scale"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-qr-scanner" style="font-size: 18px;"></i></div> <!----></div></span> <span data-v-c2ff9106="" class="copy"><div data-v-c2ff9106="" class="ivu-tooltip"><div class="ivu-tooltip-rel"><i data-v-c2ff9106="" class="ivu-icon ivu-icon-clipboard" style="font-size: 18px;"></i> <i data-v-c2ff9106="" class="ivu-icon ivu-icon-checkmark" style="font-size: 18px; color: rgb(92, 184, 92); display: none;"></i></div> <!----></div></span> <!----></div></div> <div class="example-code-more"><i class="ivu-icon ivu-icon-ios-arrow-down"></i> <i class="ivu-icon ivu-icon-ios-arrow-up" style="display: none;"></i> <button type="button" class="ivu-btn ivu-btn-text" style="display: none;"><!----> <!----> <span>Show Code</span></button></div></div></div> <div><div class="advertisement"><div class="ivu-row" style="margin-left: -16px; margin-right: -16px;"><div class="ivu-col ivu-col-span-12" style="padding-left: 16px; padding-right: 16px;"><div class="advertisement-main"><a href="https://segmentfault.com/ls/1650000011074057" target="_blank"><img src="./modal_files/537eee5b91afd7194523eb360b59b112.png"></a> <div class="advertisement-ad"></div></div></div> <div class="ivu-col ivu-col-span-12" style="padding-left: 16px; padding-right: 16px;"><div class="advertisement-main"><a href="https://github.com/TalkingData/inmap" target="_blank"><img src="./modal_files/c46639cf930369616b8daccfe85afc43.png"></a> <div class="advertisement-ad"></div></div></div></div></div></div> <div class="api"><div class="anchor"><!----> <h2 id="API">API</h2> <!----> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#API">#</a></div> <div class="anchor"><!----> <!----> <h3 id="Modal_props">Modal props</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#Modal_props">#</a></div> <table><thead><tr><th>属性</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>value</td> <td>对话框是否显示，可使用 v-model 双向绑定数据。</td> <td>Boolean</td> <td>false</td></tr> <tr><td>title</td> <td>对话框标题，如果使用 slot 自定义了页头，则 title 无效</td> <td>String</td> <td>-</td></tr> <tr><td>closable</td> <td>是否显示右上角的关闭按钮，关闭后 Esc 按键也将关闭</td> <td>Boolean</td> <td>true</td></tr> <tr><td>mask-closable</td> <td>是否允许点击遮罩层关闭</td> <td>Boolean</td> <td>true</td></tr> <tr><td>loading</td> <td>点击确定按钮时，确定按钮是否显示 loading 状态，开启则需手动设置<code>visible</code>来关闭对话框</td> <td>Boolean</td> <td>false</td></tr> <tr><td>scrollable</td> <td>页面是否可以滚动</td> <td>Boolean</td> <td>false</td></tr> <tr><td>ok-text</td> <td>确定按钮文字</td> <td>String</td> <td>确定</td></tr> <tr><td>cancel-text</td> <td>取消按钮文字</td> <td>String</td> <td>取消</td></tr> <tr><td>width</td> <td>对话框宽度，对话框的宽度是响应式的，当屏幕尺寸小于 768px 时，宽度会变为自动<code>auto</code>。当其值不大于 100 时以百分比显示，大于 100 时为像素</td> <td>Number | String</td> <td>520</td></tr> <tr><td>styles</td> <td>设置浮层样式，调整浮层位置等，该属性设置的是<code>.ivu-modal</code>的样式</td> <td>Object</td> <td>-</td></tr> <tr><td>class-name</td> <td>设置对话框容器<code>.ivu-modal-wrap</code>的类名，可辅助实现垂直居中等自定义效果</td> <td>String</td> <td>-</td></tr> <tr><td>transition-names</td> <td>自定义显示动画，第一项是模态框，第二项是背景</td> <td>Array</td> <td>['ease', 'fade']</td></tr> <tr><td>transfer</td> <td>是否将弹层放置于 body 内</td> <td>Boolean</td> <td>true</td></tr></tbody></table> <div class="anchor"><!----> <!----> <h3 id="Modal_events">Modal events</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#Modal_events">#</a></div> <table><thead><tr><th>事件名</th> <th>说明</th> <th>返回值</th></tr></thead> <tbody><tr><td>on-ok</td> <td>点击确定的回调</td> <td>无</td></tr> <tr><td>on-cancel</td> <td>点击取消的回调</td> <td>无</td></tr> <tr><td>on-visible-change</td> <td>显示状态发生变化时触发</td> <td>true / false</td></tr></tbody></table> <div class="anchor"><!----> <!----> <h3 id="Modal_slot">Modal slot</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#Modal_slot">#</a></div> <table><thead><tr><th>名称</th> <th>说明</th></tr></thead> <tbody><tr><td>header</td> <td>自定义页头</td></tr> <tr><td>footer</td> <td>自定义页脚内容</td></tr> <tr><td>close</td> <td>自定义右上角关闭内容</td></tr> <tr><td>无</td> <td>对话框主体内容</td></tr></tbody></table> <div class="anchor"><!----> <!----> <h3 id="Modal_instance">Modal instance</h3> <!----> <!----> <!---->  <a href="http://127.0.0.1:8085/components/modal#Modal_instance">#</a></div> <p>通过直接调用以下方法来使用：</p> <ul><li><code>this.$Modal.info(config)</code></li> <li><code>this.$Modal.success(config)</code></li> <li><code>this.$Modal.warning(config)</code></li> <li><code>this.$Modal.error(config)</code></li> <li><code>this.$Modal.confirm(config)</code></li></ul> <p>以上方法隐式地创建及维护Vue组件。参数 config 为对象，具体说明如下：</p> <table><thead><tr><th>属性</th> <th>说明</th> <th>类型</th> <th>默认值</th></tr></thead> <tbody><tr><td>title</td> <td>标题</td> <td>String | Element String</td> <td>-</td></tr> <tr><td>content</td> <td>内容</td> <td>String | Element String</td> <td>-</td></tr> <tr><td>render</td> <td>自定义内容，使用后不再限制类型， content 也无效。<span><a href="https://segmentfault.com/l/1500000008892728" target="_blank"><i class="ivu-icon ivu-icon-social-youtube-outline"></i> <span> 学习 Render 函数的内容</span></a> <!----> <!----></span></td> <td>Function</td> <td>-</td></tr> <tr><td>width</td> <td>宽度，单位 px</td> <td>Number | String</td> <td>416</td></tr> <tr><td>okText</td> <td>确定按钮的文字</td> <td>String</td> <td>确定</td></tr> <tr><td>cancelText</td> <td>取消按钮的文字，只在<code>Modal.confirm()</code>下有效</td> <td>String</td> <td>取消</td></tr> <tr><td>loading</td> <td>点击确定按钮时，确定按钮是否显示 loading 状态，开启则需手动调用<code>Modal.remove()</code>来关闭对话框</td> <td>Boolean</td> <td>false</td></tr> <tr><td>scrollable</td> <td>页面是否可以滚动</td> <td>Boolean</td> <td>false</td></tr> <tr><td>closable</td> <td>是否可以按 Esc 键关闭</td> <td>Boolean</td> <td>false</td></tr> <tr><td>onOk</td> <td>点击确定的回调</td> <td>Function</td> <td>-</td></tr> <tr><td>onCancel</td> <td>点击取消的回调，只在<code>Modal.confirm()</code>下有效</td> <td>Function</td> <td>-</td></tr></tbody></table> <p>另外提供了全局关闭对话框的方法：</p> <ul><li><code>this.$Modal.remove()</code></li></ul></div></article></div></div> <div class="ivu-col ivu-col-span-3"><div><div class=""><div class="catalogue" style=""><div class="ivu-card ivu-card-bordered ivu-card-dis-hover"><!----> <!----> <div class="ivu-card-body"><div class="catalogue-title">目录</div> <div class="catalogue-content"><ul><li><a href="http://127.0.0.1:8085/components/modal#%E5%9F%BA%E7%A1%80%E7%94%A8%E6%B3%95">基础用法</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F">自定义样式</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E5%BC%82%E6%AD%A5%E5%85%B3%E9%97%AD">异步关闭</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E7%A6%81%E7%94%A8%E5%85%B3%E9%97%AD">禁用关闭</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BD%8D%E7%BD%AE">自定义位置</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">基本用法</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E7%A1%AE%E8%AE%A4%E5%AF%B9%E8%AF%9D%E6%A1%86">确认对话框</a></li><li><a href="http://127.0.0.1:8085/components/modal#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9">自定义内容</a></li> <li><a href="http://127.0.0.1:8085/components/modal#API">API</a></li></ul></div></div></div></div> <div style="margin-top: 20px;"></div> <a href="https://cn.udacity.com/course/intro-to-python-nanodegree-foundation--nd000-cn-python/?utm_source=iviewui&amp;utm_medium=banner&amp;utm_campaign=python" target="_blank" class="wrapper-aside wrapper-aside-no-padding"><img src="./modal_files/5429376049d0fefd8a6f70ff67dc327d.jpg"></a> <!----> <div class="wrapper-aside"><img src="./modal_files/e59881865b6e8609bfe575dbec808e4b.png"></div></div> <div style="display: none;"></div></div></div></div></div></div> <div class="footer"><div class="footer-main"><div class="ivu-row"><div class="ivu-col ivu-col-span-5"><h4><i class="ivu-icon ivu-icon-social-github"></i>
+                        GitHub
+                    </h4> <ul><li><a href="https://github.com/iview/iview" target="_blank">iView</a></li> <li><a href="https://github.com/iview/iview-cli" target="_blank">iView Cli</a></li> <li><a href="https://github.com/iview/iview-admin" target="_blank">iView Admin</a></li> <li><a href="https://github.com/iview/iview-doc" target="_blank">iView Doc</a></li> <li><a href="https://github.com/iview/iview-project" target="_blank">iView Project</a></li></ul></div> <div class="ivu-col ivu-col-span-5"><h4><i class="ivu-icon ivu-icon-link"></i>
+                        相关站点
+                    </h4> <ul><li><a href="https://www.talkingdata.com/" target="_blank">TalkingData</a> - 用数据的心智去超越
+                        </li> <li><a href="http://mi.talkingdata.com/" target="_blank">Marketing Intelligence</a> - 免费公开大数据查询平台
+                        </li> <li><a href="https://github.com/TalkingData/inmap/" target="_blank">inMap</a> - 大数据地理信息可视化框架
+                        </li> <li><a href="https://github.com/TalkingData/Fregata" target="_blank">Fregata</a> - 大规模机器学习算法库
+                        </li> <li><a href="https://github.com/TalkingData/Myna" target="_blank">Myna</a> - Android 平台情景感知框架
+                        </li> <li><a href="https://github.com/TalkingData/owl" target="_blank">OWL</a> - 分布式监控系统
+                        </li></ul></div> <div class="ivu-col ivu-col-span-5 ivu-col-offset-2"><h4><i class="ivu-icon ivu-icon-chatbubbles"></i>
+                        社区
+                    </h4> <ul><li><a href="https://github.com/iview/iview/issues" target="_blank">反馈建议</a></li> <li><a href="https://www.iviewui.com/new-issue" target="_blank">提交bug</a></li> <li><a href="https://gitter.im/iview/iview" target="_blank">在线讨论</a></li> <li><a href="https://segmentfault.com/t/iview" target="_blank">SegmentFault</a></li></ul></div> <div class="ivu-col ivu-col-span-5 ivu-col-offset-2"><div class="footer-aside"><div class="footer-logo"><img src="./modal_files/76ecb6e76d2c438065f90cd7f8fa7371.png"></div> <div class="footer-author"><a href="https://www.talkingdata.com/"><img src="./modal_files/bca1556c01f16f9a9f6094169720c2da.png"></a></div></div></div></div></div></div> <!----> <!----></div> <div data-v-6c0a0fc1="" class="ivu-back-top ivu-back-top-show" style="bottom: 30px; right: 30px;"><div class="ivu-back-top-inner"><i class="ivu-icon ivu-icon-chevron-up"></i></div></div> <div data-v-6c0a0fc1="" class="loading fade-enter-to" style="display: none;"><i data-v-6c0a0fc1="" class="icon-loading ivu-icon ivu-icon-load-c" style="font-size: 18px;"></i></div></div>
+    <script type="text/javascript" src="./modal_files/vendors.js"></script>
+    <script type="text/javascript" src="./modal_files/main.js"></script><div class="ivu-loading-bar" style="height: 2px; display: none;"><div class="ivu-loading-bar-inner ivu-loading-bar-inner-color-primary" style="width: 0%; height: 2px;"></div></div>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?91d4d97aeea60cc72e4822c0aa248da6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-83967883-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="./modal_files/v1"></script>
+
+<textarea style="letter-spacing:normal;line-height:21px;padding-top:4px;padding-bottom:4px;font-family:&quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, &quot;\\5FAE软雅黑&quot;, Arial, sans-serif;font-weight:400;font-size:14px;text-rendering:auto;text-transform:none;width:448px;text-indent:0px;padding-left:7px;padding-right:7px;border-width:1px;box-sizing:border-box;
+    height:0 !important;
+    min-height:0 !important;
+    max-height:none !important;
+    visibility:hidden !important;
+    overflow:hidden !important;
+    position:absolute !important;
+    z-index:-1000 !important;
+    top:0 !important;
+    right:0 !important
+"></textarea><div class="ivu-message" style="top: 24px;"></div><textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 2860px;"></textarea><div data-v-39279dfe="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 900px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">《Vue.js 实战》现已开售</div></div> <div class="ivu-modal-body"><div data-v-39279dfe="" class="i-article"><div data-v-39279dfe="" class="ivu-row"><div data-v-39279dfe="" class="ivu-col ivu-col-span-10"><img data-v-39279dfe="" src="./modal_files/95627fb77ea1c0e6d51d75cd2d63ccb9.png" style="display: block; width: 90%; margin: 0px auto;"></div> <div data-v-39279dfe="" class="ivu-col ivu-col-span-14"><div data-v-39279dfe="" style="padding: 32px;"><div data-v-39279dfe="" class="ivu-alert ivu-alert-info ivu-alert-with-desc"><!----> <span class="ivu-alert-message">
+                            《Vue.js 实战》
+                            </span> <span class="ivu-alert-desc"><div data-v-39279dfe=""><p data-v-39279dfe="" style="margin-top: 6px;">本书由 Vue.js 作者 <strong data-v-39279dfe="">尤雨溪</strong> 作推荐序，TalkingData 研发副总裁马骥、W3cplus.com 站长 大漠、在线回声前端技术专家 justjavac（迷渡）、laravel-china.org 站长 Summer 联合推荐。</p> <p data-v-39279dfe="" style="margin-top: 6px;">作者：TalkingData 可视化架构师 &amp; iView 作者 梁灏（Aresn）</p> <p data-v-39279dfe="" style="margin-top: 6px;">图书介绍：本书以 Vue.js 2.0 为基础，以项目实战的方式来引导读者渐进式学习 Vue.js。通过本书的学习，读者能够掌握 Vue.js 框架主要 API 的使用方法、自定义指令、组件开发、单文件组件、Render 函数、使用 Webpack 开发可复用的单页面富应用等。本书特点是示例丰富，侧重实战，适用于刚接触或即将接触 Vue.js 的开发者，也适用于对 Vue.js 有过开发经验，但需要进一步提升的开发者。</p></div></span> <!----></div> <div data-v-39279dfe="" style="margin-top: 12px;"><div data-v-39279dfe="" class="ivu-row" style="margin-left: -8px; margin-right: -8px;"><div data-v-39279dfe="" class="ivu-col ivu-col-span-8" style="padding-left: 8px; padding-right: 8px;"><button data-v-39279dfe="" type="button" class="ivu-btn ivu-btn-warning ivu-btn-long ivu-btn-large"><!----> <i class="ivu-icon ivu-icon-ios-cart"></i> <span>天猫购买</span></button></div> <div data-v-39279dfe="" class="ivu-col ivu-col-span-8" style="padding-left: 8px; padding-right: 8px;"><button data-v-39279dfe="" type="button" class="ivu-btn ivu-btn-error ivu-btn-long ivu-btn-large"><!----> <i class="ivu-icon ivu-icon-ios-cart"></i> <span>京东购买</span></button></div> <div data-v-39279dfe="" class="ivu-col ivu-col-span-8" style="padding-left: 8px; padding-right: 8px;"><button data-v-39279dfe="" type="button" class="ivu-btn ivu-btn-info ivu-btn-long ivu-btn-large"><!----> <i class="ivu-icon ivu-icon-ios-cart"></i> <span>当当购买</span></button></div></div></div></div></div></div></div></div> <!----></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">普通的Modal对话框标题</div></div> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">基础用法</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal1 = true"</span>&gt;</span>Display dialog box<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal1"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Common Modal dialog box title"</span>
+        @<span class="hljs-attribute">on-ok</span>=<span class="hljs-value">"ok"</span>
+        @<span class="hljs-attribute">on-cancel</span>=<span class="hljs-value">"cancel"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal1: <span class="hljs-literal">false</span>
+            }
+        },
+        methods: {
+            ok () {
+                <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked ok'</span>);
+            },
+            cancel () {
+                <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked cancel'</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 360px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><p style="color: rgb(255, 102, 0); text-align: center;"><i class="ivu-icon ivu-icon-information-circled"></i> <span>删除确认</span></p></div> <div class="ivu-modal-body"> <div style="text-align: center;"><p>此任务删除后，下游 10 个任务将无法执行。</p> <p>是否继续删除？</p></div> </div> <div class="ivu-modal-footer"><div><button type="button" class="ivu-btn ivu-btn-error ivu-btn-long ivu-btn-large"><!----> <!----> <span>删除</span></button></div></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <!----> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">Modal Title</div></div> <div class="ivu-modal-body"><p>Something...</p> <p>Something...</p> <p>Something...</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>Cancel</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>OK</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 300px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">自定义宽度</div></div> <div class="ivu-modal-body"><p>自定义宽度，单位 px，默认 520px。</p> <p>对话框的宽度是响应式的，当屏幕尺寸小于 768px 时，宽度会变为自动<code>auto</code>。</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">自定义样式</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal2 = true"</span>&gt;</span>Custom header and footer<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal2"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"360"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">slot</span>=<span class="hljs-value">"header"</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"color:#f60;text-align:center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Icon</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"information-circled"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">Icon</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Delete confirmation<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"text-align:center"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>After this task is deleted, the downstream 10 tasks will not be implemented.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Will you delete it?<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">slot</span>=<span class="hljs-value">"footer"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"error"</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"large"</span> <span class="hljs-attribute">long</span> <span class="hljs-attribute">:loading</span>=<span class="hljs-value">"modal_loading"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"del"</span>&gt;</span>Delete<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal3 = true"</span>&gt;</span>No title bar<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal3"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal4 = true"</span>&gt;</span>Internationalization<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal4"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Modal Title"</span>
+        <span class="hljs-attribute">ok-text</span>=<span class="hljs-value">"OK"</span>
+        <span class="hljs-attribute">cancel-text</span>=<span class="hljs-value">"Cancel"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Something...<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal5 = true"</span>&gt;</span>Set the width<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal5"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Custom width"</span>
+        <span class="hljs-attribute">width</span>=<span class="hljs-value">"300"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Customize width, unit px, default 520px.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>The width of the dialog box is responsive, and the width becomes <span class="hljs-tag">&lt;<span class="hljs-title">code</span>&gt;</span>auto<span class="hljs-tag">&lt;/<span class="hljs-title">code</span>&gt;</span> when the screen size is less than 768px.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal2: <span class="hljs-literal">false</span>,
+                modal_loading: <span class="hljs-literal">false</span>,
+                modal3: <span class="hljs-literal">false</span>,
+                modal4: <span class="hljs-literal">false</span>,
+                modal5: <span class="hljs-literal">false</span>
+            }
+        },
+        methods: {
+            del () {
+                <span class="hljs-keyword">this</span>.modal_loading = <span class="hljs-literal">true</span>;
+                setTimeout(() =&gt; {
+                    <span class="hljs-keyword">this</span>.modal_loading = <span class="hljs-literal">false</span>;
+                    <span class="hljs-keyword">this</span>.modal2 = <span class="hljs-literal">false</span>;
+                    <span class="hljs-keyword">this</span>.$Message.success(<span class="hljs-string">'Successfully delete'</span>);
+                }, <span class="hljs-number">2000</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">对话框标题</div></div> <div class="ivu-modal-body"><p>点击确定后，对话框将在 2秒 后关闭。</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">异步关闭</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"primary"</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal6 = true"</span>&gt;</span>Display dialog box<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal6"</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">:loading</span>=<span class="hljs-value">"loading"</span>
+        @<span class="hljs-attribute">on-ok</span>=<span class="hljs-value">"asyncOK"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>After you click ok, the dialog box will close in 2 seconds.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal6: <span class="hljs-literal">false</span>,
+                loading: <span class="hljs-literal">true</span>
+            }
+        },
+        methods: {
+            asyncOK () {
+                setTimeout(() =&gt; {
+                    <span class="hljs-keyword">this</span>.modal6 = <span class="hljs-literal">false</span>;
+                }, <span class="hljs-number">2000</span>);
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><!----> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">对话框标题</div></div> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">对话框标题</div></div> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">禁用关闭</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal7 = true"</span>&gt;</span>Disable upper right corner (including Esc key)<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal7"</span>
+        <span class="hljs-attribute">:closable</span>=<span class="hljs-value">"false"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal8 = true"</span>&gt;</span>Disable mask layer closure<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal8"</span>
+        <span class="hljs-attribute">:mask-closable</span>=<span class="hljs-value">"false"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal7: <span class="hljs-literal">false</span>,
+                modal8: <span class="hljs-literal">false</span>,
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden"><div class="ivu-modal" style="width: 520px; top: 20px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">对话框标题</div></div> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden vertical-center-modal"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">对话框标题</div></div> <div class="ivu-modal-body"><p>对话框内容</p> <p>对话框内容</p> <p>对话框内容</p></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">自定义位置</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">style</span> <span class="hljs-attribute">lang</span>=<span class="hljs-value">"less"</span>&gt;</span><span class="css">
+    <span class="hljs-class">.vertical-center-modal</span><span class="hljs-rules">{
+        <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> flex</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">align-items</span>:<span class="hljs-value"> center</span></span>;
+        <span class="hljs-rule"><span class="hljs-attribute">justify-content</span>:<span class="hljs-value"> center</span></span>;
+
+        .ivu-modal{
+            <span class="hljs-rule"><span class="hljs-attribute">top</span>:<span class="hljs-value"> <span class="hljs-number">0</span></span></span>;
+        }</span>
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal9 = true"</span>&gt;</span>20px from the top<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal9"</span>
+        <span class="hljs-attribute">:styles</span>=<span class="hljs-value">"{top: '20px'}"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"modal10 = true"</span>&gt;</span>Vertical center<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Modal</span>
+        <span class="hljs-attribute">title</span>=<span class="hljs-value">"Title"</span>
+        <span class="hljs-attribute">v-model</span>=<span class="hljs-value">"modal10"</span>
+        <span class="hljs-attribute">class-name</span>=<span class="hljs-value">"vertical-center-modal"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Content of dialog<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Modal</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                modal9: <span class="hljs-literal">false</span>,
+                modal10: <span class="hljs-literal">false</span>,
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">基本用法</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('info')"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('success')"</span>&gt;</span>Success<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('warning')"</span>&gt;</span>Warning<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"instance('error')"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            instance (type) {
+                <span class="hljs-keyword">const</span> title = <span class="hljs-string">'Title'</span>;
+                <span class="hljs-keyword">const</span> content = <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>;
+                <span class="hljs-keyword">switch</span> (type) {
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'info'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.info({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'success'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.success({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'warning'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.warning({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-string">'error'</span>:
+                        <span class="hljs-keyword">this</span>.$Modal.error({
+                            title: title,
+                            content: content
+                        });
+                        <span class="hljs-keyword">break</span>;
+                }
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">确认对话框</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"confirm"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"custom"</span>&gt;</span>Custom button text<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"async"</span>&gt;</span>Asynchronous closing<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        methods: {
+            confirm () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>,
+                    onOk: () =&gt; {
+                        <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked ok'</span>);
+                    },
+                    onCancel: () =&gt; {
+                        <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Clicked cancel'</span>);
+                    }
+                });
+            },
+            custom () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;Content of dialog&lt;/p&gt;&lt;p&gt;Content of dialog&lt;/p&gt;'</span>,
+                    okText: <span class="hljs-string">'OK'</span>,
+                    cancelText: <span class="hljs-string">'Cancel'</span>
+                });
+            },
+            <span class="hljs-keyword">async</span> () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    title: <span class="hljs-string">'Title'</span>,
+                    content: <span class="hljs-string">'&lt;p&gt;The dialog box will be closed after 2 seconds&lt;/p&gt;'</span>,
+                    loading: <span class="hljs-literal">true</span>,
+                    onOk: () =&gt; {
+                        setTimeout(() =&gt; {
+                            <span class="hljs-keyword">this</span>.$Modal.remove();
+                            <span class="hljs-keyword">this</span>.$Message.info(<span class="hljs-string">'Asynchronously close the dialog box'</span>);
+                        }, <span class="hljs-number">2000</span>);
+                    }
+                });
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">放大</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">复制代码</div></div></div><div data-v-c2ff9106="" data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden code-scale-modal"><div class="ivu-modal" style="width: 65%; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">自定义内容</div></div> <div class="ivu-modal-body"><pre data-v-c2ff9106="" class=""><code data-v-c2ff9106="" class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">template</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Name: {{ value }}
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">Button</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">"handleRender"</span>&gt;</span>Custom content<span class="hljs-tag">&lt;/<span class="hljs-title">Button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">template</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+        data () {
+            <span class="hljs-keyword">return</span> {
+                value: <span class="hljs-string">''</span>
+            }            
+        },
+        methods: {
+            handleRender () {
+                <span class="hljs-keyword">this</span>.$Modal.confirm({
+                    render: (h) =&gt; {
+                        <span class="hljs-keyword">return</span> h(<span class="hljs-string">'Input'</span>, {
+                            props: {
+                                value: <span class="hljs-keyword">this</span>.value,
+                                autofocus: <span class="hljs-literal">true</span>,
+                                placeholder: <span class="hljs-string">'Please enter your name...'</span>
+                            },
+                            on: {
+                                input: (val) =&gt; {
+                                    <span class="hljs-keyword">this</span>.value = val;
+                                }
+                            }
+                        })
+                    }
+                })
+            }
+        }
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</code></pre></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden vertical-center-modal"><div class="ivu-modal" style="width: 600px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">与 iView 合作，有效触达技术人群</div></div> <div class="ivu-modal-body"><div class="ivu-article"><p>如果您有品牌推广、活动推广、招聘推广、社区合作的需求，欢迎联系我们。</p> <p>联系邮箱 <a href="mailto:admin@aresn.com">admin@aresn.com</a> 咨询。</p> <p>广告位如下图所示：</p> <div><!----></div></div></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="v-transfer-dom"><div class="ivu-modal-mask" style="display: none;"></div> <div class="ivu-modal-wrap ivu-modal-hidden vertical-center-modal"><div class="ivu-modal" style="width: 520px; display: none;"><div class="ivu-modal-content"><a class="ivu-modal-close"><i class="ivu-icon ivu-icon-ios-close-empty"></i></a> <div class="ivu-modal-header"><div class="ivu-modal-header-inner">免费加入 iView 官方QQ群参与讨论</div></div> <div class="ivu-modal-body"><div class="ivu-article"><p>免费加入官方QQ讨论群，交流 iView 技术问题。</p> <p>群号：<strong>71434987</strong></p> <p>二维码：</p> <p><img src="./modal_files/7f551d020ba6ef5dcf75a7bd8cf3fac0.png" style="display: block; width: 50%; margin: 0px auto;"></p> <p><div class="ivu-alert ivu-alert-info ivu-alert-with-icon"><span class="ivu-alert-icon"><i class="ivu-icon ivu-icon-information-circled"></i></span> <span class="ivu-alert-message">仅限开发者加入，请勿讨论与技术无关的问题，比如发招聘信息等。</span> <span class="ivu-alert-desc"></span> <!----></div></p></div></div> <div class="ivu-modal-footer"><button type="button" class="ivu-btn ivu-btn-text ivu-btn-large"><!----> <!----> <span>取消</span></button> <button type="button" class="ivu-btn ivu-btn-primary ivu-btn-large"><!----> <!----> <span>确定</span></button></div></div></div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div><div data-transfer="true" class="ivu-tooltip-popper v-transfer-dom" style="display: none;"><div class="ivu-tooltip-content"><div class="ivu-tooltip-arrow"></div> <div class="ivu-tooltip-inner">在 JSFiddle 中打开</div></div></div></body><div id="wordcard-main" class="wordcard-main" style="display:none;"></div></html>

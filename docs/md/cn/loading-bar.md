@@ -1,19 +1,100 @@
-Button 按钮
----
-基础组件，触发业务逻辑时使用。
+## LoadingBar 加载进度条
 
-### 按钮类型
+### 概述
+全局创建一个显示页面加载、异步请求、文件上传等的加载进度条。
 
-按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。
+### 说明
 
-通过设置`type`为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`创建不同样式的按钮，不设置为默认样式。
+ LoadingBar 只会在全局创建一个，因此在任何位置调用的方法都会控制这同一个组件。主要使用场景是路由切换和Ajax，因为这两者都不能拿到精确的进度，LoadingBar 会模拟进度，当然也可以通过`update()`方法来传入一个精确的进度，比如在文件上传时会很有用，具体见API。
+
+### 在路由中使用
+
+```
+// 部分代码省略
+import iView from 'iview';
+Vue.use(iView);
+
+router.beforeEach((to, from, next) => {
+    iView.LoadingBar.start();
+    next();
+});
+
+router.afterEach(route => {
+    iView.LoadingBar.finish();
+});
+```
+
 <!--divider-->
-### ButtonGroup
+
+### 在异步请求中使用
+
+```
+<script>
+// 以jQuery的Ajax为例，部分代码省略
+import $ from 'jquery';
+export default {
+    methods: {
+        getData () {
+            this.$Loading.start();
+            $.ajax({
+                url: '/api/someurl',
+                type: 'get',
+                success: () => {
+                    this.$Loading.finish();
+                }
+                error: () => {
+                    this.$Loading.error();
+                }
+            });
+        }
+    }
+}
+</script>
+```
+
+<!--divider-->
+
+### 基本用法
+点击 Start 开始进度，点击 Finish 结束。在调用start()方法后，组件会自动模拟进度，当调用finish()或error()时，补全进度并自动消失。
+
+```
+<template>
+    <Button @click="start">Start</Button>
+    <Button @click="finish">Finish</Button>
+    <Button @click="error">Error</Button>
+</template>
+<script>
+    export default {
+        methods: {
+            start () {
+                this.$Loading.start();
+            },
+            finish () {
+                this.$Loading.finish();
+            },
+            error () {
+                this.$Loading.error();
+            }
+        }
+    }
+</script>
+
+```
+
+
+<!--divider-->
+
+### API
+
+
+
+### LoadingBar instance
 <!--table-->
-| 参数       | 说明                                       | 类型      | 默认值   |
-| :------- | :--------------------------------------- | :------ | :---- |
-| size     | 按钮组合大小，可选值为`large`、`small`、`default`或者不设置 | String  | -     |
-| shape    | 按钮组合形状，可选值为`circle`或者不设置                 | String  | -     |
-| vertical | 是否纵向排列按钮组                                | Boolean | false |
+| 函数名    | 说明                   | 参数               |
+| :----- | :------------------- | :--------------- |
+| start  | 开始从 0 显示进度条，并自动加载进度  | 无                |
+| finish | 结束进度条，自动补全剩余进度       | 无                |
+| error  | 以错误的类型结束进度条，自动补全剩余进度 | 无                |
+| update | 精确加载到指定的进度           | percent，指定的进度百分比 |
 <!--table-->
 <!--divider-->

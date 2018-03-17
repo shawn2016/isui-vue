@@ -1,19 +1,132 @@
-Button 按钮
----
-基础组件，触发业务逻辑时使用。
+## Rate 评分
 
-### 按钮类型
+### 概述
+对事物进行快速的评级操作，或对评价进行展示。
+### 基础用法
+基本用法。
 
-按钮类型有：默认按钮、主按钮、幽灵按钮、虚线按钮、文字按钮以及四种颜色按钮。
+```
+<template>
+    <Rate v-model="value"></Rate>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                value: 0
+            }
+        }
+    }
+</script>
 
-通过设置`type`为`primary`、`ghost`、`dashed`、`text`、`info`、`success`、`warning`、`error`创建不同样式的按钮，不设置为默认样式。
+```
+
 <!--divider-->
-### ButtonGroup
+
+### 半星
+设置属性 allow-half 可以选中半星。
+
+```
+<template>
+    <Rate allow-half v-model="valueHalf"></Rate>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                valueHalf: 2.5
+            }
+        }
+    }
+</script>
+
+```
+
+<!--divider-->
+
+### 显示提示
+设置属性 show-text 可以显示提示文字。 提示内容也可以通过 slot 自定义。
+
+```
+<template>
+    <Row>
+        <Col span="12">
+            <Rate show-text v-model="valueText"></Rate>
+        </Col>
+        <Col span="12">
+            <Rate show-text allow-half v-model="valueCustomText">
+                <span style="color: #f5a623">{{ valueCustomText }}</span>
+            </Rate>
+        </Col>
+    </Row>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                valueText: 3,
+                valueCustomText: 3.8
+            }
+        }
+    }
+</script>
+
+```
+
+<!--divider-->
+
+### 只读
+设置属性 disabled 开启只读模式，无法交互。
+
+```
+<template>
+    <Row>
+        <Col span="12">
+            <Rate show-text v-model="valueText"></Rate>
+        </Col>
+        <Col span="12">
+            <Rate show-text allow-half v-model="valueCustomText">
+                <span style="color: #f5a623">{{ valueCustomText }}</span>
+            </Rate>
+        </Col>
+    </Row>
+</template>
+<script>
+    export default {
+        data () {
+            return {
+                valueText: 3,
+                valueCustomText: 3.8
+            }
+        }
+    }
+</script>
+
+```
+
+<!--divider-->
+
+### 使用
+
+
+### Rate props
 <!--table-->
-| 参数       | 说明                                       | 类型      | 默认值   |
-| :------- | :--------------------------------------- | :------ | :---- |
-| size     | 按钮组合大小，可选值为`large`、`small`、`default`或者不设置 | String  | -     |
-| shape    | 按钮组合形状，可选值为`circle`或者不设置                 | String  | -     |
-| vertical | 是否纵向排列按钮组                                | Boolean | false |
+| 属性         | 说明                            | 类型      | 默认值   |
+| :--------- | :---------------------------- | :------ | :---- |
+| count      | star 总数                       | Number  | 5     |
+| value      | 当前 star 数，可以使用 v-model 双向绑定数据 | Number  | 0     |
+| allow-half | 是否允许半选                        | Boolean | false |
+| disabled   | 是否只读，无法进行交互                   | Boolean | false |
+| show-text  | 是否显示提示文字                      | Boolean | false |
+<!--table-->
+<!--divider-->
+
+
+
+### Rate events
+<!--table-->
+| 事件名       | 说明      | 返回值   |
+| :-------- | :------ | :---- |
+| on-change | 评分改变时触发 | value |
 <!--table-->
 <!--divider-->
