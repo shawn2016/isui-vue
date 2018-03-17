@@ -15,7 +15,7 @@ Visit the [http://nodedai.com/isui-vue](http://nodedai.com/isui-vue) website for
 
 ### 构思
 
-借用[isui](http://nodedai.com/isui-vue)的思想，维护markdown文档就可以实现代码和效果的vue组件
+<strong>借用[isui](http://nodedai.com/isui-vue)的思想，维护markdown文档就可以实现代码和效果的vue组件</strong>
 
 ### 面临的问题
 
@@ -98,6 +98,19 @@ npm install
 npm start
 // 构建
 npm run build
+```
+### 目录结构
+
+```bash
+├── dist           # 生成的文档静态文件目录
+├── docs           # 文档的源文件  
+|————├── locales
+|    ├── md     md源文件
+|    ├── node   md生成器
+|    └── pages  vue页面       
+├── package.json
+├── examples
+└── src            # Vue组件在此
 ```
 
 ### 感谢

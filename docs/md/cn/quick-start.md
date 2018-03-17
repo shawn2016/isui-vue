@@ -2,14 +2,7 @@
 ---
 
 ```
-npm install uiw --save
-
-# 通过GitHub仓库安装
-npm i -S uiw-react/uiw
-# 指定版本
-npm i -S uiw-react/uiw#v1.2.12
-# 或者
-yarn add uiw-react/uiw
+npm install isui-vue --save
 ```
 
 <!--divider-->
@@ -19,14 +12,14 @@ ps: **通过GitHub仓库安装**的 win 用户请在 `Git Bash` 下执行，因�
 ### 使用
 
 ```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Button } from 'uiw';
-
-ReactDOM.render(
-  <Button type="primary">Hello</Button>, 
-  document.getElementById('app')
-);
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import App from 'components/app.vue';
+import Routers from './router.js';
+import isui from 'isui-vue';
+import 'isui-vue/src/dist/styles/iview.css';
+Vue.use(VueRouter);
+Vue.use(isui);
 ```
 <!--divider-->
 
@@ -35,13 +28,26 @@ ReactDOM.render(
 重新取一个名字
 
 ```js
-import { Button as ButtonView } from 'uiw';
+import { Button as ButtonView } from 'isui-vue';
 ```
 
 <!--divider-->
 
 ### 按需加载组件
 
+借助插件 babel-plugin-import可以实现按需加载组件，减少文件体积。首先安装，并在文件 .babelrc 中配置：
+```js
+npm install babel-plugin-import --save-dev
+
+// .babelrc
+{
+  "plugins": [["import", {
+    "libraryName": "isui-vue",
+    "libraryDirectory": "src/components"
+  }]]
+}
+```
+<!--divider-->
 ```Js
 - import { Alert } from 'uiw';
 + import { Alert } from 'uiw/lib/alert';
@@ -54,8 +60,8 @@ import { Button as ButtonView } from 'uiw';
 要开发，运行自重新构建，获取代码：
 
 ```
-$ git clone https://github.com/uiw-react/uiw.git
-$ cd uiw
+$ git clone https://github.com/shawn2016/isui-vue.git
+$ cd isui-vue
 $ npm install # or  yarn install
 # or 解决phantomjs下载失败问题
 $ npm install --phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
@@ -74,13 +80,7 @@ $ npm start
 
 <!--divider-->
 
-打开浏览器并访问：[http://127.0.0.1:2087](http://127.0.0.1:2087/)
-
-### 更新文档
-
-```
-npm run deploy
-```
+打开浏览器并访问：[http://127.0.0.1:8080](http://127.0.0.1:8080/)
 
 <!--divider-->
 
@@ -88,11 +88,14 @@ npm run deploy
 
 ```
 ├── dist           # 生成的文档静态文件目录
-├── docs           # 文档的源文件
-├── lib            
+├── docs           # 文档的源文件  
+|————├── locales
+|    ├── md     md源文件
+|    ├── node   md生成器
+|    └── pages  vue页面       
 ├── package.json
-├── script
-└── src            # React组件在此
+├── examples
+└── src            # Vue组件在此
 ```
 
 <!--divider-->

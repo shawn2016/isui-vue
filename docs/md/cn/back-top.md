@@ -1,45 +1,74 @@
-## Spin 加载中
+## BackTop 返回顶部
 
 ### 概述
-当区块正在获取数据中时可使用，适当的等待动画可以提升用户体验。
+当页面内容冗长，需要快捷返回顶部时使用，一般放置在页面右下角位置。
 ### 基础用法
-最简单使用 Spin 的方法。
+默认位置距离页面右部和底部 30px，滚动至距顶端 400px 时显示。
+
+```
+<template>
+    <BackTop></BackTop>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+
+```
+
+
 <!--divider-->
-### 各种尺寸
-通过设置size属性为large和small将 Spin 设置为大和小尺寸，不设置为默认（中）尺寸。
-<!--divider-->
-### 居中固定
-在容器内部垂直居中固定，需要父级有relative或absolute。
-<!--divider-->
-### 自定义内容
-自定义 Spin 的内容，可以是简单的文字，也可以是很复杂的动画。
-<!--divider-->
-### 状态切换
-控制 Spin 组件的显示和消失。
-<!--divider-->
-### 整页加载
-使用内置的 $Spin 方法可以全局加载。 可以使用 Render 函数自定义显示内容。  学习 Render 函数的内容  
+### 自定义样式
+自定义了位置在页面底部 200px,滚动至距顶端 200px 时显示。
+
+```
+<style scoped>
+    .top{
+        padding: 10px;
+        background: rgba(0, 153, 229, .7);
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+    }
+</style>
+<template>
+    <BackTop :height="100" :bottom="200">
+        <div class="top">返回顶端</div>
+    </BackTop>
+</template>
+<script>
+    export default {
+        
+    }
+</script>
+
+```
+
+
 <!--divider-->
 
 ### API
 
 
 
-### Spin props
+### BackTop props
 <!--table-->
-|  属性 | 说明 | 类型 | 默认值 |
-| :--------- | :--------- | :--------- | :--------- |
-| size | Spin尺寸，可选值为large和small或者不设置 | String | - |
-| fix | 是否固定，需要父级有relative或absolute | Boolean | false |
+| 属性       | 说明                      | 类型     | 默认值  |
+| :------- | :---------------------- | :----- | :--- |
+| height   | 页面滚动高度达到该值时才显示BackTop组件 | Number | 400  |
+| bottom   | 组件距离底部的距离               | Number | 30   |
+| right    | 组件距离右部的距离               | Number | 30   |
+| duration | 滚动动画持续时间，单位 毫秒          | Number | 1000 |
 <!--table-->
 <!--divider-->
 
 
 
-### Spin slot
+### BackTop events
 <!--table-->
-|  名称 | 说明 |
-| :--------- | :--------- |
-| 无 | 自定义 Spin 的内容，设置slot后，默认的样式不生效 |
+| 事件名      | 说明      | 返回值  |
+| :------- | :------ | :--- |
+| on-click | 点击按钮时触发 | 无    |
 <!--table-->
 <!--divider-->

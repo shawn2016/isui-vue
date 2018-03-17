@@ -1,9 +1,9 @@
 {
   "name": "isui-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue.js project",
   "author": "shawn <787990963@qq.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -12,7 +12,6 @@
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
     "build:lib": "BABEL_ENV=production build --out-dir lib --copy-files ",
-    "prepublish": "node build-node.js",
     "copymd": "node docs/node"
   },
   "dependencies": {

@@ -1,50 +1,37 @@
-## Steps 步骤条
+## Breadcrumb 面包屑
 
 ### 概述
-拆分某项流程的步骤，引导用户按流程完成任务。
+显示网站的层级结构，告知用户当前所在位置，以及在需要向上级导航时使用。
 ### 基础用法
-基本用法，组件会根据current自动判断各步骤状态。
+最基础的用法，通过设置to属性添加链接。
 <!--divider-->
-### 迷你版
-设置属性size为small启用迷你版。
+### 带图标的
+可自定义每项的内容，比如带有一个图标。
 <!--divider-->
-### 带图标的步骤条
-通过设置Step的icon属性可以自定义图标。
-<!--divider-->
-### 切换步骤
-点击下一步按钮可以切换当前进度状态。
-<!--divider-->
-### 垂直方向
-设置属性direction为vertical在垂直方向展示。
-<!--divider-->
-### 步骤运行错误
-设置Steps的属性status为error指定当前步骤状态。
+### 分隔符
+通过设置separator属性来自定义分隔符，比如 > ，也可以接受自定义的HTML字符串。
 <!--divider-->
 
 ### API
 
 
 
-### Steps props
+### Breadcrumb props
 <!--table-->
 |  属性 | 说明 | 类型 | 默认值 |
 | :--------- | :--------- | :--------- | :--------- |
-| current | 当前步骤，从 0 开始计数 | Number | 0 |
-| status | 当前步骤的状态，可选值为wait、process、finish、error | String | process |
-| size | 步骤条的尺寸，可选值为small或者不写 | String | - |
-| direction | 步骤条的方向，可选值为horizontal（水平）或vertical（垂直） | String | horizontal |
+| separator | 自定义分隔符 | String | Element String | / |
 <!--table-->
 <!--divider-->
 
 
 
-### Step props
+### BreadcrumbItem props
 <!--table-->
 |  属性 | 说明 | 类型 | 默认值 |
 | :--------- | :--------- | :--------- | :--------- |
-| status | 步骤的状态，可选值为wait、process、finish、error，不设置时自动判断 | String | process |
-| title | 标题 | String | 空 |
-| content | 步骤的详细描述，可选 | String | - |
-| icon | 步骤的图标，可选 | String | - |
+| to | 链接，不传则没有链接 | String | Object | - |
+| href | 同 to，未来将废弃 | String | Object | - |
+| replace | 路由跳转时，开启 replace 将不会向 history 添加新记录 | Boolean | false |
 <!--table-->
 <!--divider-->
